@@ -1,0 +1,130 @@
+.btn {
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 0;
+  border-radius: 30px;
+  transition: all 0.3s;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $colorWhite;
+  text-align: center;
+  padding: 13px 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &:hover {
+    border-color: #193c57;
+    background-color: #193c57;
+    color: #fff;
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &--site {
+    background-color: rgba(255, 111, 94, 1);
+  }
+
+  &--blue {
+    background-color: $colorBlue;
+    color: $colorWhite;
+    &:hover {
+      background-color: rgba(210, 213, 222, 1);
+      color: rgba(141, 145, 157, 1);
+
+      svg {
+        path {
+          fill: rgba(141, 145, 157, 1);
+        }
+      }
+    }
+  }
+
+  svg {
+    path {
+      transition: all 0.3s;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.33;
+  }
+}
+
+.link-more {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+
+  svg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $colorSite;
+    color: $colorWhite;
+  }
+}
+
+.link-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #fff;
+
+  &:hover {
+    svg {
+      background-color: $colorBlue;
+    }
+  }
+
+  svg {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: $colorSite;
+    color: $colorWhite;
+    padding: 9px;
+    transition: all 0.3s;
+  }
+}
+
+.link-back {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: $colorBlue;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  &:hover {
+    svg {
+      background-color: $colorBlue;
+
+      path {
+        fill: $colorWhite;
+      }
+    }
+  }
+
+  svg {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    color: $colorBlue;
+    border: solid 1px $colorBlue;
+    padding: 6px;
+    transition: all 0.3s;
+  }
+}

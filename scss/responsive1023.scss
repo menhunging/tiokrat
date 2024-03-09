@@ -1,0 +1,33 @@
+@media (max-width: 1023px) {
+  .footer-adress {
+    font-size: 14px;
+  }
+
+  .footer-social {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .footer-adress {
+    gap: 20px;
+  }
+
+  .footer-adress__title,
+  .footer-social__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .footer-bottom {
+    padding: 10px 0;
+    font-size: 14px;
+
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .footer__developer {
+    font-size: 14px;
+  }
+}

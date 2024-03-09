@@ -1,0 +1,188 @@
+.header {
+  background-color: $colorWhite;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+
+  .logo {
+    width: 187px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .picture {
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  padding: 34px 0;
+  gap: 25px;
+}
+
+.menu {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  flex: 1;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    @include text-decoration-hover($colorDefault);
+  }
+
+  .header-info,
+  .social {
+    display: none;
+  }
+}
+
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__link {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: $colorGray;
+    transition: background-color 0.3s;
+
+    svg {
+      path {
+        transition: all 0.3s;
+      }
+    }
+
+    &:hover {
+      background-color: $colorBlue;
+
+      svg {
+        path {
+          fill: $colorWhite;
+        }
+      }
+    }
+
+    svg {
+      pointer-events: none;
+    }
+  }
+}
+
+.header-basket {
+  color: rgba(142, 148, 159, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  @include invisLink;
+
+  &:hover {
+    .header-basket__count {
+      text-decoration-color: transparent;
+    }
+  }
+
+  &__text {
+    text-align: right;
+  }
+
+  &__count {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    display: block;
+    text-align: right;
+    color: $colorBlue;
+    text-decoration: underline;
+    transition: text-decoration 0.3s;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    background-color: $colorBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+  }
+}
+
+.header-info {
+  &__phone {
+    font-family: $fontIntro;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $colorBlue;
+    }
+  }
+
+  &__call {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    background-color: $colorBlue;
+    border-radius: 20px;
+    padding: 4px 10px;
+    display: block;
+    color: $colorWhite;
+    text-transform: uppercase;
+  }
+
+  &__mail {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    @include text-decoration-hover($colorDefault);
+  }
+}
