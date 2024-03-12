@@ -96,4 +96,131 @@
   .main {
     padding-top: 69px;
   }
+
+  .problem-content {
+    width: 390px;
+    height: 360px;
+    border-radius: 20px;
+  }
+
+  .problem-tabs__list li {
+    width: 290px;
+  }
+
+  .problem-tabs__list {
+    height: 360px;
+  }
+
+  .problem-tabs__list a {
+    font-size: 14px;
+    line-height: 16px;
+    height: 65px;
+  }
+
+  .problem-item__text {
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .problem-tabs {
+    padding: 30px 0;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets {
+    margin-top: 50px;
+  }
+
+  .technolog-item__text {
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 150px;
+    width: 250px;
+  }
+
+  .technolog-item {
+    height: 560px;
+  }
+
+  #technolog-1 .technolog-item__item:nth-child(1) {
+    bottom: 50px;
+    left: -80px;
+  }
+
+  #technolog-2 .technolog-item__item:nth-child(1) {
+    bottom: 100px;
+    left: -80px;
+  }
+
+  #technolog-2 .technolog-item__item:nth-child(2) {
+    top: 50px;
+    right: -80px;
+  }
+
+  #technolog-2 .technolog-item__item:nth-child(3) {
+    bottom: 40px;
+    right: -50px;
+  }
+
+  #technolog-3 .technolog-item__item:nth-child(2) {
+    right: -90px;
+  }
+
+  #technolog-3 .technolog-item__item:nth-child(1) {
+    left: -90px;
+  }
+
+  #technolog-4 .technolog-item__item:nth-child(1) {
+    bottom: 90px;
+    left: -80px;
+  }
+
+  #technolog-4 .technolog-item__item:nth-child(2) {
+    top: 100px;
+    right: -90px;
+    width: 399px;
+  }
+
+  .slider-technologies {
+    transform: scale(1);
+    margin-top: 30px;
+    margin-bottom: 0;
+    max-width: 805px;
+  }
+
+  .report-item__content {
+    padding-left: 20px;
+  }
+
+  .report-item {
+    padding: 20px;
+  }
+
+  .reports-slider {
+    margin-top: 30px;
+  }
+
+  .advantages-section__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .advantages-item__list {
+    padding: 2px;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .review-slider {
+    margin-top: 30px;
+  }
+
+  .faq-item {
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .faq-item + .faq-item {
+    margin-top: 15px;
+  }
 }

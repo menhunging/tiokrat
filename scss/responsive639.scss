@@ -60,4 +60,166 @@
   .footer-bottom {
     font-size: 12px;
   }
+
+  h1,
+  .caption--h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  h2,
+  .caption--h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .section-title__desc {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: -5px;
+  }
+
+  .section-title {
+    gap: 5px;
+  }
+
+  .grettings-block__desc {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5px 10px;
+  }
+
+  .grettings-block__txt {
+    font-size: 12px;
+    line-height: 14px;
+    width: 120px;
+    bottom: 2px;
+  }
+
+  .grettings-block__title {
+    max-width: 325px;
+  }
+
+  .grettings-form__text {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 100%;
+  }
+  .grettings-form__form {
+    max-width: 400px;
+  }
+
+  .grettings-form__form input {
+    padding-right: 180px;
+  }
+
+  .grettings-form__form {
+    margin-top: 8px;
+  }
+
+  .technolog-item {
+    height: auto;
+    padding-top: calc(320 / 320 * 100%);
+  }
+
+  #technolog-1 .technolog-item__item:nth-child(1) {
+    left: -20px;
+  }
+
+  #technolog-1 .technolog-item__item:nth-child(2) {
+    top: 40px;
+    right: -30px;
+  }
+
+  #technolog-2 .technolog-item__item:nth-child(3) {
+    bottom: 20px;
+    right: -20px;
+  }
+
+  #technolog-3 .technolog-item__item:nth-child(2) {
+    right: -30px;
+  }
+
+  #technolog-3 .technolog-item__item:nth-child(1) {
+    left: -30px;
+  }
+
+  #technolog-4 .technolog-item__item:nth-child(1) {
+    bottom: 40px;
+    left: -30px;
+  }
+
+  .section-title__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .section-title__icon {
+    width: 55px;
+    height: 55px;
+
+    svg {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .slider-technologies {
+    margin-top: 50px;
+  }
+
+  .advantages-item__content {
+    background-color: rgb(245, 246, 248);
+    border-radius: 40px;
+    padding: 27px 18px 60px 18px;
+    min-height: 230px;
+  }
+
+  .advantages-item__list span:not(.icon) {
+    max-width: 90%;
+  }
+
+  .advantages-item__list {
+    margin-top: 20px;
+  }
+
+  .advantages-item__list li {
+    font-size: 14px;
+    line-height: 18px;
+    gap: 15px;
+    height: 200px;
+  }
+
+  .advantages-item__list .icon {
+    width: 80px;
+    height: 80px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .advantages-slider__controls {
+    bottom: 240px;
+    padding-left: 19px;
+  }
+
+  .advantages-item__content p {
+    margin-top: 10px;
+  }
+
+  .advantages-item {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .review-item__text {
+    padding: 15px;
+  }
+
+  .review-item {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

@@ -57,4 +57,63 @@
     flex-direction: column;
     gap: 10px;
   }
+
+  .technolog-item__text {
+    font-size: 12px;
+    line-height: 14px;
+    min-height: 80px;
+    width: 210px;
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+
+  .slider-technologies {
+    max-width: 85%;
+  }
+
+  #technolog-2 .technolog-item__item:nth-child(2) {
+    top: 50px;
+    right: -40px;
+  }
+
+  #technolog-2 .technolog-item__item:nth-child(1) {
+    bottom: 80px;
+    left: -40px;
+  }
+
+  #technolog-1 .technolog-item__item:nth-child(1) {
+    bottom: 20px;
+    left: -50px;
+  }
+
+  #technolog-1 .technolog-item__item:nth-child(2) {
+    top: 40px;
+    right: -50px;
+  }
+
+  #technolog-3 .technolog-item__item:nth-child(1) {
+    left: -50px;
+    top: 40px;
+  }
+
+  #technolog-3 .technolog-item__item:nth-child(2) {
+    right: -50px;
+    bottom: 30px;
+  }
+
+  #technolog-4 .technolog-item__item:nth-child(1) {
+    bottom: 40px;
+    left: -50px;
+  }
+
+  #technolog-4 .technolog-item__item:nth-child(2) {
+    top: 30px;
+    right: -40px;
+    width: 279px;
+  }
+
+  .faq-item .quest {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
