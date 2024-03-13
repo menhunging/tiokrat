@@ -222,4 +222,39 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  .contacts__inner {
+    flex-wrap: wrap;
+  }
+
+  .contacts-left,
+  .contacts-right {
+    width: 100%;
+  }
+  .contacts-right::before {
+    display: none;
+  }
+
+  .contacts-right__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .contacts-right__btn {
+    margin-top: 20px;
+  }
+
+  .contacts-right__title {
+    margin-bottom: 20px;
+  }
+
+  .contacts-right {
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .contacts .caption {
+    display: block;
+    text-align: center;
+  }
 }

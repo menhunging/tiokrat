@@ -121,3 +121,39 @@
   &:hover {
   }
 }
+
+.btn-consul {
+  cursor: pointer;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  color: $colorWhite;
+  background-color: $colorBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s;
+  z-index: 5;
+
+  @include before {
+    background-image: url("../img/svg/arrow_consul.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33px;
+    height: 30px;
+    bottom: -10px;
+    left: calc(50% + 5px);
+  }
+
+  &:hover {
+    background-color: $colorSite;
+  }
+}

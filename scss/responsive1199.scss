@@ -223,4 +223,38 @@
   .faq-item + .faq-item {
     margin-top: 15px;
   }
+
+  .map {
+    height: 400px;
+  }
+
+  .grettings-block,
+  .footer-bottom,
+  .contacts {
+    .container {
+      padding: 0 20px;
+    }
+  }
+
+  .contacts-left {
+    width: 70%;
+  }
+
+  .contacts-right {
+    width: 30%;
+
+    &::before {
+      left: 25px;
+    }
+  }
+
+  .contacts__info {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .btn-consul {
+    right: 95px;
+    bottom: -30px;
+  }
 }

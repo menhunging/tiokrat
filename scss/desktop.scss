@@ -150,6 +150,7 @@ section {
 }
 
 .problems-section {
+  position: relative;
 }
 
 .section-title {
@@ -1202,4 +1203,123 @@ section {
     display: none;
     padding-top: 20px;
   }
+}
+
+.contacts-section {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0;
+
+  .contacts {
+    margin-top: -80px;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 500px;
+  border-radius: 40px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+  }
+}
+
+.contacts {
+  max-width: 1700px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: $colorSite;
+  border-radius: 40px;
+  position: relative;
+  z-index: 3;
+  color: $colorWhite;
+  padding: 80px 0;
+
+  .caption {
+    color: $colorWhite;
+  }
+}
+
+.contacts-left {
+  width: 65%;
+  padding-right: 20px;
+}
+
+.contacts__info {
+  margin-top: 44px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+
+  p {
+    max-width: 311px;
+  }
+
+  a {
+    @include text-decoration-hover($colorWhite);
+  }
+}
+
+.contacts__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  opacity: 0.48;
+  display: block;
+  margin-bottom: 17px;
+}
+
+.contacts-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 35%;
+  position: relative;
+
+  @include before {
+    left: 100px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: $colorWhite;
+  }
+}
+
+.contacts-right__title {
+  font-family: $fontIntro;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  opacity: 0.3;
+  margin-bottom: 61px;
+}
+
+.contacts-right__link {
+  font-family: $fontIntro;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+.contacts-right__btn {
+  padding: 11px 50px;
+  margin-top: 24px;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
