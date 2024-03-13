@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   z-index: 6;
+  transition: box-shadow 0.3s;
 
   .logo {
     width: 187px;
@@ -20,6 +21,15 @@
       display: block;
     }
   }
+
+  &.fixed {
+    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.05);
+
+    .header-inner {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .header-inner {
@@ -27,6 +37,7 @@
   align-items: center;
   padding: 34px 0;
   gap: 25px;
+  transition: padding 0.3s;
 }
 
 .menu {

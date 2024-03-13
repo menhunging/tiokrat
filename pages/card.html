@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
+    <title>Карточка товара</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="../fonts/stylesheet.css" />
+
+    <link rel="stylesheet" type="text/css" href="../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/selectric/selectric.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/micromodal/micromodal.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../libs/range/ion.rangeSlider.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="logo">
+                        <a href="/"></a>
+                        <picture class="picture">
+                            <source type="image/webp" srcset="../img/logo.webp" />
+                            <img src="../img/logo.png" alt="" />
+                        </picture>
+                    </div>
+
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Продукция</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Сертификаты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Преимущества</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Технологии</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+
+                        <div class="social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.174 14.4486C11.9621 14.6861 11.7617 14.9338 11.5371 15.1585C10.8938 15.8024 10.2397 16.4354 9.59383 17.0761C9.44149 17.2272 9.28339 17.3373 9.06513 17.2323C8.85326 17.1305 8.85262 16.9391 8.86734 16.7388C8.96976 15.314 9.06577 13.8886 9.1765 12.4644C9.18482 12.355 9.26803 12.2289 9.35316 12.1508C11.1108 10.5244 12.8742 8.90369 14.6363 7.28175C15.7232 6.28132 16.8094 5.28089 17.8956 4.28045C17.9487 4.23181 18.0172 4.1902 18.0473 4.13004C18.078 4.06923 18.101 3.95082 18.0709 3.92521C18.0191 3.88233 17.9231 3.88169 17.8456 3.88361C17.804 3.88489 17.7631 3.92778 17.7221 3.95274C13.9386 6.2666 10.1545 8.57853 6.37427 10.8975C6.20785 10.9999 6.07151 11.0146 5.88845 10.9513C4.367 10.4264 2.84235 9.91116 1.31834 9.39335C0.922777 9.25893 0.733956 9.03875 0.730756 8.70271C0.727555 8.37563 0.904215 8.14905 1.28122 8.00503C6.66166 5.94464 12.0415 3.88425 17.4219 1.8245C18.4857 1.41741 19.5495 1.00841 20.6152 0.605164C21.0485 0.441305 21.4518 0.511713 21.7981 0.818307C22.136 1.11722 22.257 1.49806 22.1597 1.94291C22.0528 2.43385 21.9478 2.92478 21.8397 3.41508C20.8079 8.10168 19.7754 12.7876 18.743 17.4736C18.7225 17.5671 18.7052 17.6611 18.679 17.7533C18.4889 18.4203 17.7592 18.659 17.1876 18.2315C16.2992 17.5671 15.4178 16.8937 14.5339 16.2242C13.8343 15.6942 13.1341 15.1642 12.4345 14.6349C12.3724 14.5875 12.3064 14.5446 12.2424 14.4992C12.22 14.4819 12.197 14.4653 12.174 14.4486Z"
+                                                fill="#8E949F" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.53528 20.7254C1.78142 19.9883 2.01135 19.2979 2.2419 18.6075C2.40641 18.1146 2.56717 17.6198 2.7404 17.13C2.78963 16.9911 2.77592 16.8895 2.6918 16.7661C1.43247 14.9192 0.775696 12.8747 0.885365 10.6408C1.07542 6.76438 2.87624 3.81327 6.28597 1.96695C10.4329 -0.278158 15.4047 0.604184 18.6039 4.06376C20.2508 5.84465 21.135 7.9751 21.2577 10.3997C21.4783 14.7509 19.0619 18.6735 15.0446 20.3503C11.8367 21.6894 8.70057 21.4184 5.71145 19.6294C5.52576 19.5178 5.37746 19.4998 5.17494 19.5664C4.02528 19.944 2.87063 20.3073 1.71786 20.675C1.67486 20.6881 1.63124 20.6987 1.53528 20.7254ZM14.1604 16.7013C14.629 16.6963 15.0384 16.6209 15.3649 16.3168C15.7456 15.9623 16.1226 15.6028 16.4871 15.2307C16.9021 14.807 16.9252 14.0331 16.5214 13.6119C15.9899 13.0567 15.4477 12.5089 14.8851 11.9855C14.323 11.4633 13.4693 11.6758 13.179 12.3837C12.8998 13.0641 12.306 13.319 11.6255 13.0361C10.8092 12.6965 10.1668 12.1295 9.61594 11.4509C9.31559 11.0807 9.06759 10.6795 8.93611 10.2146C8.76226 9.60083 9.01899 9.10109 9.62279 8.88299C10.3886 8.6057 10.593 7.72025 10.0197 7.13451C9.50876 6.61296 8.99157 6.09701 8.47064 5.58418C7.97526 5.09628 7.30104 5.09503 6.8069 5.57795C6.46668 5.90945 6.13518 6.24781 5.79931 6.58243C5.55879 6.8217 5.42731 7.11208 5.38369 7.4467C5.2871 8.19195 5.48152 8.88923 5.79121 9.54537C7.12469 12.37 9.21153 14.493 11.924 16.0115C12.6269 16.4053 13.3808 16.6683 14.1604 16.7013Z"
+                                                fill="#8E949F" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="header-info">
+                            <a href="tel:84952257057" class="header-info__phone">8 (495) 225 70 57</a>
+                            <div class="header-info__call">
+                                <span class="header-info__text">звонок</span>
+                                <a href="#" class="header-info__mail">info@tiokraft.com</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.174 14.4486C11.9621 14.6861 11.7617 14.9338 11.5371 15.1585C10.8938 15.8024 10.2397 16.4354 9.59383 17.0761C9.44149 17.2272 9.28339 17.3373 9.06513 17.2323C8.85326 17.1305 8.85262 16.9391 8.86734 16.7388C8.96976 15.314 9.06577 13.8886 9.1765 12.4644C9.18482 12.355 9.26803 12.2289 9.35316 12.1508C11.1108 10.5244 12.8742 8.90369 14.6363 7.28175C15.7232 6.28132 16.8094 5.28089 17.8956 4.28045C17.9487 4.23181 18.0172 4.1902 18.0473 4.13004C18.078 4.06923 18.101 3.95082 18.0709 3.92521C18.0191 3.88233 17.9231 3.88169 17.8456 3.88361C17.804 3.88489 17.7631 3.92778 17.7221 3.95274C13.9386 6.2666 10.1545 8.57853 6.37427 10.8975C6.20785 10.9999 6.07151 11.0146 5.88845 10.9513C4.367 10.4264 2.84235 9.91116 1.31834 9.39335C0.922777 9.25893 0.733956 9.03875 0.730756 8.70271C0.727555 8.37563 0.904215 8.14905 1.28122 8.00503C6.66166 5.94464 12.0415 3.88425 17.4219 1.8245C18.4857 1.41741 19.5495 1.00841 20.6152 0.605164C21.0485 0.441305 21.4518 0.511713 21.7981 0.818307C22.136 1.11722 22.257 1.49806 22.1597 1.94291C22.0528 2.43385 21.9478 2.92478 21.8397 3.41508C20.8079 8.10168 19.7754 12.7876 18.743 17.4736C18.7225 17.5671 18.7052 17.6611 18.679 17.7533C18.4889 18.4203 17.7592 18.659 17.1876 18.2315C16.2992 17.5671 15.4178 16.8937 14.5339 16.2242C13.8343 15.6942 13.1341 15.1642 12.4345 14.6349C12.3724 14.5875 12.3064 14.5446 12.2424 14.4992C12.22 14.4819 12.197 14.4653 12.174 14.4486Z"
+                                            fill="#8E949F" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__link">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.53528 20.7254C1.78142 19.9883 2.01135 19.2979 2.2419 18.6075C2.40641 18.1146 2.56717 17.6198 2.7404 17.13C2.78963 16.9911 2.77592 16.8895 2.6918 16.7661C1.43247 14.9192 0.775696 12.8747 0.885365 10.6408C1.07542 6.76438 2.87624 3.81327 6.28597 1.96695C10.4329 -0.278158 15.4047 0.604184 18.6039 4.06376C20.2508 5.84465 21.135 7.9751 21.2577 10.3997C21.4783 14.7509 19.0619 18.6735 15.0446 20.3503C11.8367 21.6894 8.70057 21.4184 5.71145 19.6294C5.52576 19.5178 5.37746 19.4998 5.17494 19.5664C4.02528 19.944 2.87063 20.3073 1.71786 20.675C1.67486 20.6881 1.63124 20.6987 1.53528 20.7254ZM14.1604 16.7013C14.629 16.6963 15.0384 16.6209 15.3649 16.3168C15.7456 15.9623 16.1226 15.6028 16.4871 15.2307C16.9021 14.807 16.9252 14.0331 16.5214 13.6119C15.9899 13.0567 15.4477 12.5089 14.8851 11.9855C14.323 11.4633 13.4693 11.6758 13.179 12.3837C12.8998 13.0641 12.306 13.319 11.6255 13.0361C10.8092 12.6965 10.1668 12.1295 9.61594 11.4509C9.31559 11.0807 9.06759 10.6795 8.93611 10.2146C8.76226 9.60083 9.01899 9.10109 9.62279 8.88299C10.3886 8.6057 10.593 7.72025 10.0197 7.13451C9.50876 6.61296 8.99157 6.09701 8.47064 5.58418C7.97526 5.09628 7.30104 5.09503 6.8069 5.57795C6.46668 5.90945 6.13518 6.24781 5.79931 6.58243C5.55879 6.8217 5.42731 7.11208 5.38369 7.4467C5.2871 8.19195 5.48152 8.88923 5.79121 9.54537C7.12469 12.37 9.21153 14.493 11.924 16.0115C12.6269 16.4053 13.3808 16.6683 14.1604 16.7013Z"
+                                            fill="#8E949F" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-basket">
+                        <a href="#"></a>
+                        <div class="header-basket__text">
+                            <span>в корзине</span>
+                            <a href="#" class="header-basket__count">3 товара</a>
+                        </div>
+                        <div class="header-basket__icon">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 6.70627C23.0462 9.21064 22.0963 11.7163 21.1375 14.2188C20.7838 15.1425 20.0138 15.6581 19.0175 15.6588C15.94 15.66 12.8625 15.66 9.78563 15.6588C9.03563 15.6588 8.5275 15.3113 8.2575 14.6125C6.80062 10.8375 5.3425 7.06252 3.89625 3.28377C3.80562 3.04689 3.70187 2.96752 3.44812 2.98064C2.84 3.01189 2.23 3.00752 1.62125 3.01814C0.805625 3.03252 0.265625 2.63252 0.035625 1.84314C0.029375 1.82189 0.0125 1.80377 0 1.78439C0 1.61252 0 1.44064 0 1.26877C0.02875 1.18877 0.055625 1.10752 0.08625 1.02814C0.300625 0.471893 0.695 0.0887681 1.29 0.0543931C2.2625 -0.00248185 3.23938 0.0125181 4.21438 1.81507e-05C4.28375 -0.000606849 4.35375 0.0150182 4.4225 0.0300181C5.51688 0.275018 6.20125 0.980018 6.60437 1.99127C6.86125 2.63564 7.11625 3.28127 7.34875 3.93439C7.42688 4.15377 7.52688 4.22252 7.76188 4.22189C12.4312 4.21377 17.1006 4.21502 21.77 4.21627C22.7631 4.21627 23.5913 4.80627 23.8894 5.72002C23.93 5.84439 23.9631 5.97127 24 6.09689C24 6.30002 24 6.50314 24 6.70627ZM8.64188 7.22564C8.65125 7.26689 8.65438 7.29689 8.665 7.32502C9.33187 9.05689 9.99813 10.7888 10.6737 12.5175C10.6994 12.5831 10.8175 12.6531 10.8931 12.6538C13.3769 12.6606 15.8612 12.6581 18.345 12.6631C18.4887 12.6631 18.5481 12.6119 18.5969 12.485C19.2463 10.7881 19.9013 9.09377 20.5531 7.39752C20.5731 7.34502 20.5819 7.28752 20.5975 7.22564C16.6012 7.22564 12.6275 7.22564 8.64188 7.22564Z"
+                                    fill="white" />
+                                <path
+                                    d="M18.328 19.3625C18.2649 19.3363 18.2036 19.3069 18.1393 19.285C17.4393 19.0469 17.0049 18.3457 17.1224 17.6388C17.2461 16.8907 17.8724 16.36 18.6261 16.3632C19.3611 16.3663 20.0018 16.9044 20.108 17.6075C20.223 18.3669 19.8036 19.0563 19.0843 19.2919C19.0193 19.3132 18.9555 19.3394 18.8911 19.3632C18.703 19.3625 18.5155 19.3625 18.328 19.3625Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.7187 19.3625C11.6612 19.3418 11.6043 19.3193 11.5462 19.3012C10.8131 19.0762 10.3806 18.3787 10.4968 17.6093C10.6049 16.8931 11.2531 16.3568 12.0024 16.3631C12.7637 16.3693 13.3831 16.9231 13.4874 17.6912C13.5831 18.3937 13.1149 19.095 12.4099 19.305C12.3506 19.3225 12.2924 19.3431 12.2343 19.3625C12.0624 19.3625 11.8906 19.3625 11.7187 19.3625Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="header-info">
+                        <a href="tel:84952257057" class="header-info__phone">8 (495) 225 70 57</a>
+                        <div class="header-info__call">
+                            <span class="header-info__text">звонок</span>
+                            <a href="#" class="header-info__mail">info@tiokraft.com</a>
+                        </div>
+                    </div>
+
+                    <button class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="inner-page">
+                <div class="container">
+
+                    <section class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>Тиокрафт VL 10</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="card">
+                        <div class="card-media">
+                            <div class="slider-card-big swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <picture class="picture">
+                                            <a href="../img/pic-product.jpg" data-fancybox="card"></a>
+                                            <source type="image/webp" srcset="../img/pic-product.webp" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture class="picture">
+                                            <a href="../img/pic-product.jpg" data-fancybox="card"></a>
+                                            <source type="image/webp" srcset="../img/pic-product.webp" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture class="picture">
+                                            <a href="../img/pic-product.jpg" data-fancybox="card"></a>
+                                            <source type="image/webp" srcset="../img/pic-product.webp" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture class="picture">
+                                            <a href="../img/pic-product.jpg" data-fancybox="card"></a>
+                                            <source type="image/webp" srcset="../img/pic-product.webp" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider-card-small swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-product.webp" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-product.webp" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-product.webp" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture class="picture">
+                                            <source type="image/webp" srcset="../img/pic-product.webp" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <button class="swiper-button-prev">
+                                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1L2 10L11 19" stroke="#152743" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                                <button class="swiper-button-next">
+                                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L10 10L1 19" stroke="#152743" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <div class="card-info">
+                            <div class="card-info__head">
+                                <h2 class="caption caption--h3">тиокрафт vl 10</h2>
+                                <span class="card-info__desc">Очиститель-обеззараживатель воздуха</span>
+
+                                <div class="card-info__summ">
+                                    <span class="card-info__price">15 000</span>
+                                    <span class="card-info__cur">руб</span>
+                                </div>
+                            </div>
+
+                            <button class="btn btn--blueDark">
+                                Добавить в корзину
+
+                                <span class="icon">
+                                    <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.9427 6.34795C22.0503 8.69131 21.1614 11.0358 20.2643 13.3774C19.9333 14.2418 19.2128 14.7243 18.2806 14.7248C15.401 14.726 12.5213 14.726 9.64228 14.7248C8.94051 14.7248 8.46505 14.3997 8.21241 13.7459C6.84921 10.2136 5.48483 6.6813 4.13157 3.14551C4.04678 2.92386 3.9497 2.84959 3.71226 2.86187C3.14324 2.89111 2.57246 2.88702 2.00285 2.89696C1.23967 2.91041 0.734386 2.53613 0.519174 1.79751C0.513326 1.77763 0.497536 1.76067 0.48584 1.74254C0.48584 1.58171 0.48584 1.42089 0.48584 1.26007C0.512741 1.18521 0.537888 1.10918 0.566544 1.03491C0.767136 0.514428 1.13615 0.155937 1.6929 0.123772C2.60287 0.0705537 3.51693 0.0845893 4.42924 0.072893C4.49416 0.0723081 4.55966 0.0869285 4.62399 0.100964C5.648 0.330211 6.28837 0.989882 6.66558 1.93611C6.90593 2.53906 7.14454 3.14317 7.36209 3.7543C7.43519 3.95957 7.52876 4.0239 7.74865 4.02332C12.1178 4.01571 16.487 4.01688 20.8561 4.01805C21.7854 4.01805 22.5603 4.57012 22.8392 5.42512C22.8772 5.54149 22.9082 5.66021 22.9427 5.77776C22.9427 5.96782 22.9427 6.15789 22.9427 6.34795ZM8.57207 6.83393C8.58084 6.87253 8.58377 6.9006 8.59371 6.92692C9.21771 8.54744 9.84112 10.168 10.4733 11.7856C10.4973 11.847 10.6078 11.9125 10.6786 11.913C13.0026 11.9195 15.3273 11.9171 17.6513 11.9218C17.7858 11.9218 17.8414 11.8739 17.887 11.7551C18.4946 10.1674 19.1075 8.58194 19.7175 6.99476C19.7362 6.94563 19.7444 6.89183 19.759 6.83393C16.0197 6.83393 12.3014 6.83393 8.57207 6.83393Z"
+                                            fill="white" />
+                                        <path
+                                            d="M17.6353 18.1904C17.5762 18.1659 17.5189 18.1384 17.4586 18.1179C16.8037 17.8951 16.3972 17.239 16.5072 16.5775C16.6229 15.8775 17.2089 15.381 17.9142 15.3839C18.602 15.3868 19.2014 15.8904 19.3008 16.5483C19.4084 17.2588 19.016 17.9039 18.3429 18.1244C18.2821 18.1442 18.2224 18.1688 18.1622 18.191C17.9861 18.1904 17.8107 18.1904 17.6353 18.1904Z"
+                                            fill="white" />
+                                        <path
+                                            d="M11.4509 18.1904C11.3971 18.1711 11.3439 18.15 11.2895 18.1331C10.6035 17.9225 10.1988 17.2699 10.3076 16.55C10.4088 15.8798 11.0152 15.378 11.7164 15.3838C12.4287 15.3897 13.0083 15.9078 13.1059 16.6266C13.1954 17.2839 12.7574 17.9401 12.0977 18.1366C12.0422 18.1529 11.9878 18.1722 11.9334 18.1904C11.7726 18.1904 11.6117 18.1904 11.4509 18.1904Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <ul class="card-info__list">
+                                <li>
+                                    <span>Производительность<br />
+                                        м3/ч (±10%):</span>
+                                    <p>40 / 100</p>
+                                </li>
+                                <li>
+                                    <span>Шум к окружению,<br />
+                                        не более Дб:</span>
+                                    <p>40 / 100</p>
+                                </li>
+                                <li>
+                                    <span>Мощность потребляемая<br />
+                                        от сети, Вт</span>
+                                    <p>50</p>
+                                </li>
+                                <li>
+                                    <span>Габариты, Д×Ш×В, мм</span>
+                                    <p>570*125*160</p>
+                                </li>
+                                <li>
+                                    <span>Исполнение</span>
+                                    <p>настенное</p>
+                                </li>
+                                <li>
+                                    <span>Масса нетто, кг</span>
+                                    <p>6,1</p>
+                                </li>
+                                <li>
+                                    <span>Срок гарантии</span>
+                                    <p>2 года</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-description">
+                            <p>Фотокаталитический очиститель-обеззараживатель воздуха «ТИОКРАФТ VL10» по ТУ
+                                3468-002-88871100-2011 (далее по тексту – Изделие) предназначен для очистки и снижения
+                                уровня микробной обсемененности воздуха в помещениях, где требуется поддержание чистоты
+                                воздушной среды. Очистка воздуха от всех органических примесей (включая патогенную
+                                микрофлору) происходит путем их фотокаталитического окисления без накопления внутри
+                                Изделия.</p>
+                        </div>
+                    </section>
+
+                    <section class="documents">
+                        <div class="section-title">
+                            <h2 class="caption caption--h2">документы</h2>
+                            <div class="section-title__text">
+                                <p>
+                                    Ниже представлены документы, которые вы можете посмотреть и при
+                                    необходимости скачать
+                                </p>
+                            </div>
+                            <div class="swiper-controls">
+                                <button class="swiper-button-prev"></button>
+                                <button class="swiper-button-next"></button>
+                            </div>
+                        </div>
+
+                        <div class="reports-slider-two swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="report-item">
+                                        <div class="report-item__media ">
+                                            <picture class="picture">
+                                                <a href="../img/doc2.jpg" data-fancybox="sertificat"></a>
+                                                <img src="../img/doc2.jpg" alt="" />
+                                            </picture>
+                                        </div>
+                                        <div class="report-item__content">
+                                            <h3 class="caption">технический паспорт</h3>
+                                            <h3 class="caption">тиокрафт VL 10</h3>
+
+                                            <a href="../img/doc.jpg" class="btn-download" download>скачать
+                                                документ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="report-item">
+                                        <div class="report-item__media ">
+                                            <picture class="picture">
+                                                <a href="../img/doc3.jpg" data-fancybox="sertificat"></a>
+                                                <img src="../img/doc3.jpg" alt="" />
+                                            </picture>
+                                        </div>
+                                        <div class="report-item__content">
+                                            <h3 class="caption">технический паспорт</h3>
+                                            <h3 class="caption">тиокрафт VL 10</h3>
+
+                                            <a href="../img/doc.jpg" class="btn-download" download>скачать
+                                                документ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="report-item">
+                                        <div class="report-item__media ">
+                                            <picture class="picture">
+                                                <a href="../img/doc2.jpg" data-fancybox="sertificat"></a>
+                                                <img src="../img/doc2.jpg" alt="" />
+                                            </picture>
+                                        </div>
+                                        <div class="report-item__content">
+                                            <h3 class="caption">технический паспорт</h3>
+                                            <h3 class="caption">тиокрафт VL 10</h3>
+
+                                            <a href="../img/doc.jpg" class="btn-download" download>скачать
+                                                документ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="report-item">
+                                        <div class="report-item__media ">
+                                            <picture class="picture">
+                                                <a href="../img/doc3.jpg" data-fancybox="sertificat"></a>
+                                                <img src="../img/doc3.jpg" alt="" />
+                                            </picture>
+                                        </div>
+                                        <div class="report-item__content">
+                                            <h3 class="caption">технический паспорт</h3>
+                                            <h3 class="caption">тиокрафт VL 10</h3>
+
+                                            <a href="../img/doc.jpg" class="btn-download" download>скачать
+                                                документ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="report-item">
+                                        <div class="report-item__media ">
+                                            <picture class="picture">
+                                                <a href="../img/doc2.jpg" data-fancybox="sertificat"></a>
+                                                <img src="../img/doc2.jpg" alt="" />
+                                            </picture>
+                                        </div>
+                                        <div class="report-item__content">
+                                            <h3 class="caption">технический паспорт</h3>
+                                            <h3 class="caption">тиокрафт VL 10</h3>
+
+                                            <a href="../img/doc.jpg" class="btn-download" download>скачать
+                                                документ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="report-item">
+                                        <div class="report-item__media ">
+                                            <picture class="picture">
+                                                <a href="../img/doc3.jpg" data-fancybox="sertificat"></a>
+                                                <img src="../img/doc3.jpg" alt="" />
+                                            </picture>
+                                        </div>
+                                        <div class="report-item__content">
+                                            <h3 class="caption">технический паспорт</h3>
+                                            <h3 class="caption">тиокрафт VL 10</h3>
+
+                                            <a href="../img/doc.jpg" class="btn-download" download>скачать
+                                                документ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="foto-section">
+                        <div class="section-title">
+                            <h2 class="caption caption--h2">фотогалерея</h2>
+                            <div class="swiper-controls">
+                                <button class="swiper-button-prev"></button>
+                                <button class="swiper-button-next"></button>
+                            </div>
+                        </div>
+
+                        <div class="slider-foto swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture class="picture">
+                                        <a href="../img/pic-foto1.png" data-fancybox="foto"></a>
+                                        <img src="../img/pic-foto1.png" alt="" />
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture class="picture">
+                                        <a href="../img/pic-foto2.png" data-fancybox="foto"></a>
+                                        <img src="../img/pic-foto2.png" alt="" />
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture class="picture">
+                                        <a href="../img/pic-foto1.png" data-fancybox="foto"></a>
+                                        <img src="../img/pic-foto1.png" alt="" />
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture class="picture">
+                                        <a href="../img/pic-foto2.png" data-fancybox="foto"></a>
+                                        <img src="../img/pic-foto2.png" alt="" />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </section>
+
+
+
+                </div>
+            </section>
+
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <div class="contacts-left">
+                            <h2 class="caption caption--h2">контакты</h2>
+                            <ul class="contacts__info">
+                                <li>
+                                    <span class="contacts__title">адрес:</span>
+                                    <p>
+                                        121087, г. Москва, ул. Барклая, д. 6, стр. 5, офис А310
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="contacts__title">режим работы:</span>
+                                    <p>
+                                        пн-пт с 10:00 до 18:00
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="contacts__title">e-mail:</span>
+                                    <a href="mailto:info@tiokraft.com">info@tiokraft.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts-right">
+                            <span class="contacts-right__title">связь с нами:</span>
+                            <a href="tel:84952257057" class="contacts-right__link">8 (495) 225 70 57</a>
+                            <a href="#" class="btn btn--blue contacts-right__btn">Заявка на звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top__inner">
+                        <div class="logo">
+                            <a href="/"></a>
+                            <picture class="picture">
+                                <source type="image/webp" srcset="../img/logo.webp" />
+                                <img src="../img/logo.png" alt="" />
+                            </picture>
+                        </div>
+
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Продукция</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Сертификаты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Преимущества</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Технологии</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Отзывы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Контакты</a>
+                                </li>
+                            </ul>
+
+                            <div class="social">
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.174 14.4486C11.9621 14.6861 11.7617 14.9338 11.5371 15.1585C10.8938 15.8024 10.2397 16.4354 9.59383 17.0761C9.44149 17.2272 9.28339 17.3373 9.06513 17.2323C8.85326 17.1305 8.85262 16.9391 8.86734 16.7388C8.96976 15.314 9.06577 13.8886 9.1765 12.4644C9.18482 12.355 9.26803 12.2289 9.35316 12.1508C11.1108 10.5244 12.8742 8.90369 14.6363 7.28175C15.7232 6.28132 16.8094 5.28089 17.8956 4.28045C17.9487 4.23181 18.0172 4.1902 18.0473 4.13004C18.078 4.06923 18.101 3.95082 18.0709 3.92521C18.0191 3.88233 17.9231 3.88169 17.8456 3.88361C17.804 3.88489 17.7631 3.92778 17.7221 3.95274C13.9386 6.2666 10.1545 8.57853 6.37427 10.8975C6.20785 10.9999 6.07151 11.0146 5.88845 10.9513C4.367 10.4264 2.84235 9.91116 1.31834 9.39335C0.922777 9.25893 0.733956 9.03875 0.730756 8.70271C0.727555 8.37563 0.904215 8.14905 1.28122 8.00503C6.66166 5.94464 12.0415 3.88425 17.4219 1.8245C18.4857 1.41741 19.5495 1.00841 20.6152 0.605164C21.0485 0.441305 21.4518 0.511713 21.7981 0.818307C22.136 1.11722 22.257 1.49806 22.1597 1.94291C22.0528 2.43385 21.9478 2.92478 21.8397 3.41508C20.8079 8.10168 19.7754 12.7876 18.743 17.4736C18.7225 17.5671 18.7052 17.6611 18.679 17.7533C18.4889 18.4203 17.7592 18.659 17.1876 18.2315C16.2992 17.5671 15.4178 16.8937 14.5339 16.2242C13.8343 15.6942 13.1341 15.1642 12.4345 14.6349C12.3724 14.5875 12.3064 14.5446 12.2424 14.4992C12.22 14.4819 12.197 14.4653 12.174 14.4486Z"
+                                                    fill="#8E949F" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.53528 20.7254C1.78142 19.9883 2.01135 19.2979 2.2419 18.6075C2.40641 18.1146 2.56717 17.6198 2.7404 17.13C2.78963 16.9911 2.77592 16.8895 2.6918 16.7661C1.43247 14.9192 0.775696 12.8747 0.885365 10.6408C1.07542 6.76438 2.87624 3.81327 6.28597 1.96695C10.4329 -0.278158 15.4047 0.604184 18.6039 4.06376C20.2508 5.84465 21.135 7.9751 21.2577 10.3997C21.4783 14.7509 19.0619 18.6735 15.0446 20.3503C11.8367 21.6894 8.70057 21.4184 5.71145 19.6294C5.52576 19.5178 5.37746 19.4998 5.17494 19.5664C4.02528 19.944 2.87063 20.3073 1.71786 20.675C1.67486 20.6881 1.63124 20.6987 1.53528 20.7254ZM14.1604 16.7013C14.629 16.6963 15.0384 16.6209 15.3649 16.3168C15.7456 15.9623 16.1226 15.6028 16.4871 15.2307C16.9021 14.807 16.9252 14.0331 16.5214 13.6119C15.9899 13.0567 15.4477 12.5089 14.8851 11.9855C14.323 11.4633 13.4693 11.6758 13.179 12.3837C12.8998 13.0641 12.306 13.319 11.6255 13.0361C10.8092 12.6965 10.1668 12.1295 9.61594 11.4509C9.31559 11.0807 9.06759 10.6795 8.93611 10.2146C8.76226 9.60083 9.01899 9.10109 9.62279 8.88299C10.3886 8.6057 10.593 7.72025 10.0197 7.13451C9.50876 6.61296 8.99157 6.09701 8.47064 5.58418C7.97526 5.09628 7.30104 5.09503 6.8069 5.57795C6.46668 5.90945 6.13518 6.24781 5.79931 6.58243C5.55879 6.8217 5.42731 7.11208 5.38369 7.4467C5.2871 8.19195 5.48152 8.88923 5.79121 9.54537C7.12469 12.37 9.21153 14.493 11.924 16.0115C12.6269 16.4053 13.3808 16.6683 14.1604 16.7013Z"
+                                                    fill="#8E949F" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="header-info">
+                                <a href="tel:84952257057" class="header-info__phone">8 (495) 225 70 57</a>
+                                <div class="header-info__call">
+                                    <span class="header-info__text">звонок</span>
+                                    <a href="#" class="header-info__mail">info@tiokraft.com</a>
+                                </div>
+                            </div>
+                        </nav>
+
+                        <div class="header-info">
+                            <a href="tel:84952257057" class="header-info__phone">8 (495) 225 70 57</a>
+                            <div class="header-info__call">
+                                <span class="header-info__text">звонок</span>
+                                <a href="#" class="header-info__mail">info@tiokraft.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-center">
+                <div class="container">
+                    <div class="footer-center__inner">
+                        <div class="footer-adress">
+                            <span class="footer-adress__title">адрес:</span>
+                            <span class="footer-adress__text">121087, г. Москва, ул. Барклая, д. 6, стр. 5, офис
+                                А310</span>
+                        </div>
+                        <div class="footer-social">
+                            <span class="footer-social__text">мы в соц. сетях:</span>
+                            <div class="social">
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.174 14.4486C11.9621 14.6861 11.7617 14.9338 11.5371 15.1585C10.8938 15.8024 10.2397 16.4354 9.59383 17.0761C9.44149 17.2272 9.28339 17.3373 9.06513 17.2323C8.85326 17.1305 8.85262 16.9391 8.86734 16.7388C8.96976 15.314 9.06577 13.8886 9.1765 12.4644C9.18482 12.355 9.26803 12.2289 9.35316 12.1508C11.1108 10.5244 12.8742 8.90369 14.6363 7.28175C15.7232 6.28132 16.8094 5.28089 17.8956 4.28045C17.9487 4.23181 18.0172 4.1902 18.0473 4.13004C18.078 4.06923 18.101 3.95082 18.0709 3.92521C18.0191 3.88233 17.9231 3.88169 17.8456 3.88361C17.804 3.88489 17.7631 3.92778 17.7221 3.95274C13.9386 6.2666 10.1545 8.57853 6.37427 10.8975C6.20785 10.9999 6.07151 11.0146 5.88845 10.9513C4.367 10.4264 2.84235 9.91116 1.31834 9.39335C0.922777 9.25893 0.733956 9.03875 0.730756 8.70271C0.727555 8.37563 0.904215 8.14905 1.28122 8.00503C6.66166 5.94464 12.0415 3.88425 17.4219 1.8245C18.4857 1.41741 19.5495 1.00841 20.6152 0.605164C21.0485 0.441305 21.4518 0.511713 21.7981 0.818307C22.136 1.11722 22.257 1.49806 22.1597 1.94291C22.0528 2.43385 21.9478 2.92478 21.8397 3.41508C20.8079 8.10168 19.7754 12.7876 18.743 17.4736C18.7225 17.5671 18.7052 17.6611 18.679 17.7533C18.4889 18.4203 17.7592 18.659 17.1876 18.2315C16.2992 17.5671 15.4178 16.8937 14.5339 16.2242C13.8343 15.6942 13.1341 15.1642 12.4345 14.6349C12.3724 14.5875 12.3064 14.5446 12.2424 14.4992C12.22 14.4819 12.197 14.4653 12.174 14.4486Z"
+                                                    fill="#8E949F" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.53528 20.7254C1.78142 19.9883 2.01135 19.2979 2.2419 18.6075C2.40641 18.1146 2.56717 17.6198 2.7404 17.13C2.78963 16.9911 2.77592 16.8895 2.6918 16.7661C1.43247 14.9192 0.775696 12.8747 0.885365 10.6408C1.07542 6.76438 2.87624 3.81327 6.28597 1.96695C10.4329 -0.278158 15.4047 0.604184 18.6039 4.06376C20.2508 5.84465 21.135 7.9751 21.2577 10.3997C21.4783 14.7509 19.0619 18.6735 15.0446 20.3503C11.8367 21.6894 8.70057 21.4184 5.71145 19.6294C5.52576 19.5178 5.37746 19.4998 5.17494 19.5664C4.02528 19.944 2.87063 20.3073 1.71786 20.675C1.67486 20.6881 1.63124 20.6987 1.53528 20.7254ZM14.1604 16.7013C14.629 16.6963 15.0384 16.6209 15.3649 16.3168C15.7456 15.9623 16.1226 15.6028 16.4871 15.2307C16.9021 14.807 16.9252 14.0331 16.5214 13.6119C15.9899 13.0567 15.4477 12.5089 14.8851 11.9855C14.323 11.4633 13.4693 11.6758 13.179 12.3837C12.8998 13.0641 12.306 13.319 11.6255 13.0361C10.8092 12.6965 10.1668 12.1295 9.61594 11.4509C9.31559 11.0807 9.06759 10.6795 8.93611 10.2146C8.76226 9.60083 9.01899 9.10109 9.62279 8.88299C10.3886 8.6057 10.593 7.72025 10.0197 7.13451C9.50876 6.61296 8.99157 6.09701 8.47064 5.58418C7.97526 5.09628 7.30104 5.09503 6.8069 5.57795C6.46668 5.90945 6.13518 6.24781 5.79931 6.58243C5.55879 6.8217 5.42731 7.11208 5.38369 7.4467C5.2871 8.19195 5.48152 8.88923 5.79121 9.54537C7.12469 12.37 9.21153 14.493 11.924 16.0115C12.6269 16.4053 13.3808 16.6683 14.1604 16.7013Z"
+                                                    fill="#8E949F" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__inner">
+                        <div class="copyRight">
+                            <p>Тиокрафт Системс / <span class="thisYear"></span> &copy;</p>
+                        </div>
+
+
+                        <a href="#">Политика конфиденциальности</a>
+
+                        <div class="footer__developer">
+                            <span class="developer__text">Разработано</span>
+                            <a href="#">Internet Team</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../libs/jquery/jquery-3.7.0.min.js"></script>
+    <script src="../libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../libs/selectric/jquery.selectric.min.js"></script>
+    <script src="../libs/micromodal/micromodal.min.js"></script>
+    <script src="../libs/tabslet/jquery.tabslet.min.js"></script>
+    <script src="../libs/fancybox/fancybox.umd.js"></script>
+    <script src="../libs/inputmask/jquery.inputmask.min.js"></script>
+    <script src="../libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../libs/range/ion.rangeSlider.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

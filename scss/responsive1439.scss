@@ -237,4 +237,25 @@
   .contacts {
     padding: 50px 0;
   }
+
+  .not-page__inner {
+    min-height: 660px;
+  }
+
+  .card-info__list li {
+    min-width: 186px;
+    max-width: 275px;
+  }
+
+  .card-info__list {
+    gap: 30px 20px;
+    height: 305px;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+
+  .documents .report-item__media .picture {
+    width: 100%;
+    height: auto;
+  }
 }

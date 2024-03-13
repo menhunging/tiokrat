@@ -2,6 +2,18 @@ let observer = () => {
   // функция для работы destroy Swiper
 };
 
+addEventListener("scroll", (event) => {
+  currentScroll = $(window).scrollTop();
+
+  // console.log("currentScroll", currentScroll);
+
+  if (currentScroll > 0) {
+    $(".header").addClass("fixed");
+  } else {
+    $(".header").removeClass("fixed");
+  }
+});
+
 $(document).ready(function () {
   if ($(".burger").length > 0) {
     $(".burger").on("click", function () {
@@ -177,6 +189,50 @@ $(document).ready(function () {
     sliders.length && sliderinit();
   }
 
+  if ($(".reports-slider-two").length > 0) {
+    const sliders = document.querySelectorAll(".reports-slider-two");
+
+    let mySwipers = [];
+
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 2,
+            spaceBetween: 80,
+            watchSlidesProgress: true,
+            navigation: {
+              nextEl: $($(slider).parents(".documents")[0]).find(
+                ".swiper-button-next"
+              )[0],
+              prevEl: $($(slider).parents(".documents")[0]).find(
+                ".swiper-button-prev"
+              )[0],
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1200: {
+                slidesPerView: 2,
+                spaceBetween: 80,
+              },
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    sliders.length && sliderinit();
+  }
+
   if ($(".advantages-slider").length > 0) {
     const swiper = new Swiper(".advantages-slider", {
       slidesPerView: 1,
@@ -238,6 +294,66 @@ $(document).ready(function () {
     $(".faq-item .quest").on("click", function () {
       $(this).parents(".faq-item").toggleClass("opened");
       $(this).parents(".faq-item").find(".answer").stop().slideToggle();
+    });
+  }
+
+  if ($(".card-media").length > 0) {
+    const swiperSmall = new Swiper(".slider-card-small", {
+      spaceBetween: 33,
+      slidesPerView: 3,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          spaceBetween: 10,
+          slidesPerView: 2,
+        },
+        480: {
+          spaceBetween: 33,
+          slidesPerView: 3,
+        },
+      },
+    });
+
+    const swiperBig = new Swiper(".slider-card-big", {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: swiperSmall,
+      },
+    });
+  }
+
+  if ($(".slider-foto").length > 0) {
+    const swiper = new Swiper(".slider-foto", {
+      slidesPerView: 2,
+      spaceBetween: 18,
+      autoHeight: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".foto-section .swiper-button-next",
+        prevEl: ".foto-section .swiper-button-prev",
+      },
+      pagination: {
+        el: ".slider-foto .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: 18,
+        },
+      },
     });
   }
 });

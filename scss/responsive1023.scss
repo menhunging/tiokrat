@@ -382,4 +382,48 @@
   .contacts {
     padding: 40px 0;
   }
+
+  .not-page__media {
+    max-width: 450px;
+  }
+
+  .not-page__inner {
+    min-height: 620px;
+  }
+
+  .card-info {
+    width: calc(100% - 305px - 50px);
+  }
+
+  .card-media {
+    width: 305px;
+  }
+
+  .slider-card-big .picture {
+    height: 280px;
+  }
+
+  .slider-card-small .swiper-button-prev {
+    left: -25px;
+  }
+
+  .slider-card-small .swiper-button-next {
+    right: -25px;
+  }
+
+  .card-info__list li + li {
+    margin-top: 15px;
+  }
+
+  .documents .report-item__media {
+    width: calc(100% - 142px - 15px);
+  }
+
+  .documents .report-item__content {
+    width: 142px;
+  }
+
+  .documents + .foto-section {
+    padding-top: 30px;
+  }
 }

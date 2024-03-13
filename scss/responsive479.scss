@@ -141,4 +141,47 @@
   .faq-item {
     border-radius: 20px;
   }
+
+  .breadcrumbs {
+    padding: 10px 0;
+  }
+
+  .slider-card-small {
+    width: 100%;
+  }
+
+  .slider-card-small .swiper-button-prev {
+    left: -5px;
+  }
+
+  .slider-card-small .swiper-button-next {
+    right: -5px;
+  }
+
+  .card-info .btn {
+    padding: 10px 50px;
+  }
+
+  .card-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .documents .report-item__media {
+    width: 100%;
+  }
+
+  .documents .report-item__content {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    gap: 10px;
+    min-height: 210px;
+
+    .caption {
+      & + .caption {
+        margin-top: 10px;
+      }
+    }
+  }
 }

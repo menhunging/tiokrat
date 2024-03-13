@@ -595,12 +595,12 @@ picture {
 .swiper-button-prev,
 .swiper-button-next {
   border: 0;
-  opacity: 1 !important;
-  position: relative !important;
-  top: 0 !important;
-  bottom: 0 !important;
-  right: 0 !important;
-  left: 0 !important;
+  opacity: 1;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   height: 23px;
   width: 23px;
   margin: 0;
@@ -734,18 +734,33 @@ div {
 }
 
 @media (min-width: 1200px) {
+  .compensate-for-scrollbar,
   _:-webkit-any-link,
   :root .modal-open {
     padding-right: 17px;
+
+    .header {
+      width: calc(100% - 17px);
+    }
   }
 
+  .compensate-for-scrollbar,
   _:-webkit-any-link,
   :root .hidden {
     padding-right: 17px;
+
+    .header {
+      width: calc(100% - 17px);
+    }
   }
 
+  .compensate-for-scrollbar,
   _:-webkit-any-link,
   :root body.compensate-for-scrollbar {
     padding-right: 17px;
+
+    .header {
+      width: calc(100% - 17px);
+    }
   }
 }

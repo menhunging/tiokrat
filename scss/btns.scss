@@ -30,6 +30,7 @@
     background-color: $colorBlue;
     color: $colorWhite;
     border: solid 2px $colorBlue;
+
     &:hover {
       background-color: $colorWhite;
       color: rgba(21, 39, 67, 1);
@@ -38,6 +39,45 @@
       svg {
         path {
           fill: rgba(21, 39, 67, 1);
+        }
+      }
+    }
+  }
+
+  &--blueDark {
+    background-color: $colorSite;
+    color: $colorWhite;
+    border: solid 2px $colorSite;
+    padding-right: 70px;
+    padding-left: 70px;
+
+    .icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $colorBlue;
+      width: 41px;
+      height: 41px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: $colorSite;
+      background-color: $colorWhite;
+      color: rgba(21, 39, 67, 1);
+      border-color: rgba(21, 39, 67, 1);
+
+      .icon {
+        background-color: $colorSite;
+      }
+
+      svg {
+        path {
         }
       }
     }

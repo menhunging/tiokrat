@@ -80,10 +80,23 @@
     height: 100px;
     font-size: 11px;
 
-
     svg {
       width: 30px;
       height: 30px;
+    }
+  }
+
+  .not-page {
+    max-width: calc(100% - 20px);
+    width: 100%;
+  }
+
+  .not-page,
+  .grettings-block,
+  .footer-bottom,
+  .contacts {
+    .container {
+      padding: 0 20px;
     }
   }
 }
