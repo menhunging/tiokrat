@@ -191,8 +191,9 @@
   gap: 5px;
   font-size: 14px;
   font-weight: 700;
-  transition: all 0.3s;
+  transition: background-color 0.3s;
   z-index: 5;
+  position: fixed;
 
   @include before {
     background-image: url("../img/svg/arrow_consul.svg");

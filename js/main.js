@@ -167,6 +167,14 @@ $(document).ready(function () {
       initialSlide: 1,
       watchSlidesProgress: true,
     });
+
+    $(".slider-technologies .technolog-item").on("click", function () {
+      if (!$(this).parents(".swiper-slide").hasClass("swiper-slide-visible")) {
+        let index = $(this).parents(".swiper-slide").index();
+
+        swiper.slideTo(index);
+      }
+    });
   }
 
   if ($(".reports-slider").length > 0) {
@@ -263,15 +271,6 @@ $(document).ready(function () {
       spaceBetween: 20,
       autoHeight: true,
       watchSlidesProgress: true,
-      effect: "creative",
-      creativeEffect: {
-        prev: {
-          translate: ["-120%", 0, -500],
-        },
-        next: {
-          translate: ["120%", 0, -500],
-        },
-      },
       navigation: {
         nextEl: ".advantages-slider .swiper-button-next",
         prevEl: ".advantages-slider .swiper-button-prev",

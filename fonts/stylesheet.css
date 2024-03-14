@@ -189,18 +189,9 @@
 
 @font-face {
     font-family: 'Intro';
-    src: url('Intro-Bold.woff2') format('woff2'),
-        url('Intro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Intro';
-    src: url('Intro-Black.woff2') format('woff2'),
-        url('Intro-Black.woff') format('woff');
-    font-weight: 900;
+    src: url('Intro.woff2') format('woff2'),
+        url('Intro.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }

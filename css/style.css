@@ -356,6 +356,9 @@ picture {
 .check-block input {
   display: none;
 }
+.check-block input:checked + label::before {
+  box-shadow: 0px 0px 15px 0px rgb(58, 153, 217);
+}
 .check-block input:checked + label::after {
   opacity: 1;
 }
@@ -413,6 +416,7 @@ picture {
   -ms-border-radius: 50%;
   border-radius: 50%;
   opacity: 0;
+  border: solid 5px transparent;
 }
 .check-block a {
   text-decoration: underline;
@@ -705,7 +709,6 @@ picture {
 }
 .modal__inner .caption {
   font-size: 24px;
-  font-weight: 500;
   line-height: 29px;
 }
 .modal__inner .modals-caption {
@@ -937,6 +940,11 @@ div::-webkit-scrollbar-thumb {
   :root .modal-open .header {
     width: calc(100% - 17px);
   }
+  .compensate-for-scrollbar .btn-consul,
+  _:-webkit-any-link .btn-consul,
+  :root .modal-open .btn-consul {
+    right: 57px;
+  }
   .compensate-for-scrollbar,
   _:-webkit-any-link,
   :root .hidden {
@@ -947,6 +955,11 @@ div::-webkit-scrollbar-thumb {
   :root .hidden .header {
     width: calc(100% - 17px);
   }
+  .compensate-for-scrollbar .btn-consul,
+  _:-webkit-any-link .btn-consul,
+  :root .hidden .btn-consul {
+    right: 57px;
+  }
   .compensate-for-scrollbar,
   _:-webkit-any-link,
   :root body.compensate-for-scrollbar {
@@ -956,6 +969,11 @@ div::-webkit-scrollbar-thumb {
   _:-webkit-any-link .header,
   :root body.compensate-for-scrollbar .header {
     width: calc(100% - 17px);
+  }
+  .compensate-for-scrollbar .btn-consul,
+  _:-webkit-any-link .btn-consul,
+  :root body.compensate-for-scrollbar .btn-consul {
+    right: 57px;
   }
 }
 .btn {
@@ -1143,8 +1161,9 @@ div::-webkit-scrollbar-thumb {
   gap: 5px;
   font-size: 14px;
   font-weight: 700;
-  transition: all 0.3s;
+  transition: background-color 0.3s;
   z-index: 5;
+  position: fixed;
 }
 .btn-consul::before {
   content: "";
@@ -1196,6 +1215,7 @@ div::-webkit-scrollbar-thumb {
   color: rgb(21, 39, 67);
   text-transform: uppercase;
   font-family: "Intro";
+  font-weight: normal;
 }
 .caption--h1 {
   font-size: 80px;
@@ -1203,7 +1223,6 @@ div::-webkit-scrollbar-thumb {
 }
 .caption--h2 {
   font-size: 60px;
-  font-weight: 600;
   line-height: 64px;
   letter-spacing: 0em;
 }
@@ -1375,7 +1394,6 @@ h2 {
   font-size: 30px;
   line-height: 32px;
   letter-spacing: 0em;
-  font-weight: bold;
   width: 100%;
   display: block;
   text-align: center;
@@ -1596,7 +1614,7 @@ h2 {
   width: 258px;
   display: block;
   position: absolute;
-  right: 33px;
+  right: 25px;
   bottom: 10px;
 }
 .grettings-block__txt::before {
@@ -1926,7 +1944,6 @@ section {
 }
 .product-item__price .price {
   font-size: 35px;
-  font-weight: 800;
   line-height: 35px;
   letter-spacing: 0em;
   text-align: left;
@@ -1986,6 +2003,7 @@ section {
   cursor: grab;
 }
 .slider-technologies .swiper-slide {
+  cursor: pointer;
   transition: transform 1s, opacity 0.5s, filter 0.5s;
   z-index: 2;
   transform: scale(0.55);
@@ -1996,6 +2014,7 @@ section {
   opacity: 0;
 }
 .slider-technologies .swiper-slide.swiper-slide-visible {
+  cursor: grab;
   z-index: 3;
   transform: scale(1);
   opacity: 1;
@@ -2069,7 +2088,6 @@ section {
 .technolog-item__text {
   font-family: "Intro";
   font-size: 18px;
-  font-weight: 600;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: center;
@@ -2367,12 +2385,21 @@ section {
 .advantages-slider .swiper-slide.swiper-slide-visible {
   opacity: 1 !important;
 }
+.advantages-slider .swiper-slide.swiper-slide-visible .advantages-item__content {
+  transform: scale(1);
+}
+.advantages-slider .swiper-slide.swiper-slide-visible .advantages-item__list li {
+  transform: scale(1);
+  opacity: 1;
+}
 
 .advantages-item__content {
   background-color: rgb(245, 246, 248);
   border-radius: 40px;
   padding: 57px 48px 89px 48px;
   min-height: 294px;
+  transition: transform 1s;
+  transform: scale(0);
 }
 .advantages-item__content p {
   margin-top: 19px;
@@ -2401,6 +2428,13 @@ section {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  transition: all 1.5s;
+  transform-origin: center center;
+  transform: scale(0);
+  opacity: 0;
+}
+.advantages-item__list li + li {
+  transition: all 1.5s 0.5s;
 }
 .advantages-item__list .icon {
   background-color: rgb(58, 153, 217);
@@ -2600,7 +2634,6 @@ section {
   cursor: pointer;
   font-family: "Intro";
   font-size: 16px;
-  font-weight: 600;
   line-height: 25px;
   letter-spacing: 0em;
   position: relative;
@@ -2736,7 +2769,6 @@ section {
 .contacts-right__title {
   font-family: "Intro";
   font-size: 20px;
-  font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   opacity: 0.3;
@@ -2746,9 +2778,17 @@ section {
 .contacts-right__link {
   font-family: "Intro";
   font-size: 30px;
-  font-weight: 400;
   line-height: 32px;
   letter-spacing: 0em;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  -webkit-transition: text-decoration 0.3s;
+  -moz-transition: text-decoration 0.3s;
+  -o-transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s;
+}
+.contacts-right__link:hover {
+  text-decoration-color: rgb(255, 255, 255);
 }
 
 .contacts-right__btn {
@@ -3033,7 +3073,6 @@ section {
 .card-info__price {
   font-family: "Intro";
   font-size: 35px;
-  font-weight: 800;
   line-height: 35px;
   letter-spacing: 0em;
 }
@@ -3041,7 +3080,6 @@ section {
 .card-info__cur {
   font-family: "Intro";
   font-size: 20px;
-  font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
 }
@@ -3249,7 +3287,6 @@ section {
 .basket-item__name {
   font-family: "Intro";
   font-size: 20px;
-  font-weight: 800;
   line-height: 20px;
   letter-spacing: 0em;
   text-transform: uppercase;
@@ -3305,7 +3342,6 @@ section {
 .count-block__count {
   font-family: "Intro";
   font-size: 20px;
-  font-weight: 800;
   line-height: 20px;
   letter-spacing: 0em;
   width: 60px;
@@ -3345,7 +3381,6 @@ section {
 .basket-result__result {
   font-family: "Intro";
   font-size: 25px;
-  font-weight: 800;
   line-height: 25px;
   letter-spacing: 0em;
   color: rgb(21, 39, 67);
@@ -3428,7 +3463,6 @@ section {
 .order-item__caption {
   font-family: "Intro";
   font-size: 20px;
-  font-weight: 800;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
@@ -3461,9 +3495,9 @@ section {
 }
 .check-list .check-block label::after {
   background-color: rgb(21, 39, 67);
-  width: 9px;
-  height: 9px;
-  left: 7.5px;
+  width: 11px;
+  height: 11px;
+  left: 6px;
 }
 
 .form-list {
@@ -3593,7 +3627,6 @@ section {
   border-radius: 40px;
   padding: 14px 23px;
   text-align: left;
-  font-weight: 800;
 }
 .popup-section .caption + * {
   margin-top: 14px;
@@ -3655,11 +3688,10 @@ section {
   padding-bottom: 50px;
 }
 .popup-section__result .text {
+  font-family: "Intro";
   font-size: 16px;
   line-height: 22px;
-  font-weight: 800;
   text-transform: uppercase;
-  font-family: "Intro";
 }
 .popup-section__result span {
   max-width: 235px;
@@ -3684,6 +3716,11 @@ section {
   width: calc(100% - 282px - 12px);
   text-align: left;
   line-height: 18px;
+}
+
+.social__link svg {
+  position: relative;
+  left: -1px;
 }
 
 @media (max-width: 1619px) {

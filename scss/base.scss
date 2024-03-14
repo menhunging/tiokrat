@@ -153,6 +153,7 @@ picture {
     &:checked {
       & + label {
         &::before {
+          box-shadow: 0px 0px 15px 0px $colorBlue;
         }
 
         &::after {
@@ -196,6 +197,7 @@ picture {
       transform: translateY(-50%);
       @include border-radius(50%);
       opacity: 0;
+      border: solid 5px transparent;
     }
   }
 
@@ -507,7 +509,6 @@ picture {
 
   .caption {
     font-size: 24px;
-    font-weight: 500;
     line-height: 29px;
   }
 
@@ -748,6 +749,10 @@ div {
     .header {
       width: calc(100% - 17px);
     }
+
+    .btn-consul {
+      right: 57px;
+    }
   }
 
   .compensate-for-scrollbar,
@@ -758,6 +763,10 @@ div {
     .header {
       width: calc(100% - 17px);
     }
+
+    .btn-consul {
+      right: 57px;
+    }
   }
 
   .compensate-for-scrollbar,
@@ -767,6 +776,10 @@ div {
 
     .header {
       width: calc(100% - 17px);
+    }
+
+    .btn-consul {
+      right: 57px;
     }
   }
 }
