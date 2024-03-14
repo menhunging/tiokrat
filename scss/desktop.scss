@@ -1782,6 +1782,10 @@ section {
 
   .btn-delete {
   }
+
+  .check-block input:checked + label::before {
+    box-shadow: none;
+  }
 }
 
 .basket-content {
@@ -1919,7 +1923,6 @@ section {
     width: 100%;
     text-align: center;
     display: block;
-    font-weight: 800;
 
     & + * {
       margin-top: 30px;
