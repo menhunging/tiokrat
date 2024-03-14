@@ -122,7 +122,6 @@
   }
 
   .breadcrumbs {
-    padding: 30px 0;
     font-size: 14px;
     line-height: 18px;
 
@@ -153,5 +152,28 @@
   .slider-foto {
     margin-top: 20px;
   }
-}
 
+  .basket-result__result {
+    margin-top: 50px;
+  }
+
+  .result-section {
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 20px;
+  }
+
+  .result-section__status {
+    font-size: 16px;
+
+    li {
+      padding: 12px 30px;
+    }
+  }
+
+  .result-section__info {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 20px;
+  }
+}

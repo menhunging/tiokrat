@@ -71,6 +71,14 @@
   .contacts-section {
     max-width: calc(100% - 20px);
     width: 100%;
+
+    .contacts {
+    }
+  }
+
+  .contacts {
+    max-width: calc(100% - 20px);
+    width: 100%;
   }
 
   .btn-consul {

@@ -273,4 +273,96 @@
     line-height: 48px;
     margin-bottom: 10px;
   }
+
+  .basket-item .product-item__price {
+    order: 6;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .check-list {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .check-list .check-block label {
+    font-size: 14px;
+  }
+
+  .form-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-list .input-item.textarea-item {
+    grid-column: initial;
+  }
+
+  .order-list {
+    padding: 30px 20px;
+  }
+
+  .order-item__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .result-section {
+    gap: 15px;
+  }
+
+  .result-section__status {
+    font-size: 14px;
+
+    li {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      line-height: 20px;
+      gap: 15px;
+    }
+  }
+
+  .result-section__info {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 15px;
+    text-align: center;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup-section .caption {
+    text-align: center;
+  }
+
+  .modal__close {
+    right: 20px;
+    top: -30px;
+  }
+
+  .popup-section__result {
+    min-height: 250px;
+    padding-bottom: 30px;
+  }
+
+  .popup-section__controls {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+    margin-top: 15px;
+
+    .btn {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .popup-section__desc {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }

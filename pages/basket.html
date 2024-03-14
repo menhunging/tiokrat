@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
-    <title>Все модальные окна</title>
+    <title>Корзина</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
@@ -20,30 +20,6 @@
     <link rel="stylesheet" type="text/css" href="../libs/fancybox/fancybox.css" />
 
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
-    <style>
-        .test-modals {
-            padding: 50px 0;
-        }
-
-        .test-modals a {
-            display: table;
-            text-decoration: underline;
-        }
-
-        .test-modals h1 {
-            margin-bottom: 50px;
-        }
-
-        .test-modals a+a {
-            margin-top: 10px;
-        }
-
-        .test-modals a:hover {
-            text-decoration-color: transparent;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -181,20 +157,211 @@
         </header>
 
         <main class="main">
-
-            <section class="test-modals">
+            <section class="inner-page">
                 <div class="container">
-                    <h1 class="caption">Тестовые ссылки для открытия модалок:</h1>
 
-                    <a href="#" data-modal="modal-call">Заказать звонок</a>
-                    <a href="#" data-modal="modal-feedback">Оставить отзыв</a>
-                    <a href="#" data-modal="modal-feedback-2">Консультация</a>
-                    <a href="#" data-modal="modal-success">Cпасибо!</a>
-                    <a href="#" data-modal="modal-success-2">Cпасибо! 2</a>
-                    <a href="#" data-modal="modal-success-3">Cпасибо! 3</a>
+                    <section class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>Тиокрафт VL 10</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="basket-section">
+                        <h2 class="caption caption--h2">корзина</h2>
+                        <form class="basket">
+                            <div class="basket-content">
+                                <div class="basket-list">
+                                    <div class="basket-item">
+                                        <picture class="picture">
+                                            <a href="#"></a>
+                                            <source type="image/webp" srcset="../img/pic-product.jpg" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+
+                                        <div class="basket-item__info">
+                                            <a href="#" class="basket-item__name">тиокрафт VL 10</a>
+                                            <p>воздухоочистительный прибор</p>
+
+                                            <div class="basket-colors">
+                                                <span class="basket-colors__title">цвет:</span>
+                                                <ul>
+                                                    <li>
+                                                        белый
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="count-block">
+                                            <button class="count-block__controls count-block__minus">-</button>
+                                            <span class="count-block__count">1</span>
+                                            <button class="count-block__controls count-block__plus">+</button>
+                                        </div>
+
+                                        <div class="product-item__price">
+                                            <span class="price">15 000</span>
+                                            <span class="cur">руб</span>
+                                        </div>
+
+                                        <button class="btn-delete">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.88914 8.59619L8.59614 9.88919L5 6.29305L1.40386 9.88919L0.110862 8.59619L3.70701 5.00005L0.110862 1.40391L1.40386 0.110913L5 3.70706L8.59614 0.110914L9.88914 1.40391L6.293 5.00005L9.88914 8.59619Z"
+                                                    fill="#B6BAC3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="basket-item">
+                                        <picture class="picture">
+                                            <a href="#"></a>
+                                            <source type="image/webp" srcset="../img/pic-product.jpg" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+
+                                        <div class="basket-item__info">
+                                            <a href="#" class="basket-item__name">тиокрафт VL 10</a>
+                                            <p>воздухоочистительный прибор</p>
+
+                                            <div class="basket-colors">
+                                                <span class="basket-colors__title">цвет:</span>
+                                                <ul>
+                                                    <li>
+                                                        белый
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="count-block">
+                                            <button class="count-block__controls count-block__minus">-</button>
+                                            <span class="count-block__count">12</span>
+                                            <button class="count-block__controls count-block__plus">+</button>
+                                        </div>
+
+                                        <div class="product-item__price">
+                                            <span class="price">555 000</span>
+                                            <span class="cur">руб</span>
+                                        </div>
+
+                                        <button class="btn-delete">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.88914 8.59619L8.59614 9.88919L5 6.29305L1.40386 9.88919L0.110862 8.59619L3.70701 5.00005L0.110862 1.40391L1.40386 0.110913L5 3.70706L8.59614 0.110914L9.88914 1.40391L6.293 5.00005L9.88914 8.59619Z"
+                                                    fill="#B6BAC3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="basket-item">
+                                        <picture class="picture">
+                                            <a href="#"></a>
+                                            <source type="image/webp" srcset="../img/pic-product.jpg" />
+                                            <img src="../img/pic-product.jpg" alt="" />
+                                        </picture>
+
+                                        <div class="basket-item__info">
+                                            <a href="#" class="basket-item__name">тиокрафт VL 10</a>
+                                            <p>воздухоочистительный прибор</p>
+
+                                            <div class="basket-colors">
+                                                <span class="basket-colors__title">цвет:</span>
+                                                <ul>
+                                                    <li>
+                                                        белый
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="count-block">
+                                            <button class="count-block__controls count-block__minus">-</button>
+                                            <span class="count-block__count">1</span>
+                                            <button class="count-block__controls count-block__plus">+</button>
+                                        </div>
+
+                                        <div class="product-item__price">
+                                            <span class="price">15 000</span>
+                                            <span class="cur">руб</span>
+                                        </div>
+
+                                        <button class="btn-delete">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.88914 8.59619L8.59614 9.88919L5 6.29305L1.40386 9.88919L0.110862 8.59619L3.70701 5.00005L0.110862 1.40391L1.40386 0.110913L5 3.70706L8.59614 0.110914L9.88914 1.40391L6.293 5.00005L9.88914 8.59619Z"
+                                                    fill="#B6BAC3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-result">
+                                <span class="caption caption--h3">о заказе</span>
+
+                                <ul class="basket-result__list">
+                                    <li>
+                                        <span>3 товара на сумму</span>
+                                        <span>45 000 руб</span>
+                                    </li>
+                                </ul>
+
+                                <div class="basket-result__result">
+                                    <span>итого</span>
+
+                                    <div class="product-item__price">
+                                        <span class="price">45 000</span>
+                                        <span class="cur">руб</span>
+                                    </div>
+                                </div>
+
+                                <div class="basket-result__controls">
+                                    <button class="btn btn--blueDark">Оформить заказ</button>
+                                    <a href="#" class="btn btn--white">Вернуться в каталог</a>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
                 </div>
             </section>
 
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <div class="contacts-left">
+                            <h2 class="caption caption--h2">контакты</h2>
+                            <ul class="contacts__info">
+                                <li>
+                                    <span class="contacts__title">адрес:</span>
+                                    <p>
+                                        121087, г. Москва, ул. Барклая, д. 6, стр. 5, офис А310
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="contacts__title">режим работы:</span>
+                                    <p>
+                                        пн-пт с 10:00 до 18:00
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="contacts__title">e-mail:</span>
+                                    <a href="mailto:info@tiokraft.com">info@tiokraft.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts-right">
+                            <span class="contacts-right__title">связь с нами:</span>
+                            <a href="tel:84952257057" class="contacts-right__link">8 (495) 225 70 57</a>
+                            <a href="#" class="btn btn--blue contacts-right__btn">Заявка на звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -335,221 +502,6 @@
                 </div>
             </div>
         </footer>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-call" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <form action="" class="popup-section">
-                            <span class="caption">заказать звонок</span>
-                            <p>Если у вас есть вопросы или вы хотите получить
-                                консультацию, оставьте заявку, мы перезвоним вам</p>
-
-                            <div class="input-list">
-                                <div class="input-item">
-                                    <input type="text" placeholder="ФИО">
-                                </div>
-                                <div class="input-item">
-                                    <input type="text" placeholder="Телефон" class="phone-input">
-                                </div>
-                            </div>
-
-                            <button class="btn btn--blueDark">Оформить заказ</button>
-                            <p class="popup-section__desc">нажимая кнопку «оформить заказ»
-                                вы принимаете политику конфидициальности
-                                и соглашаетесь на обработку персональных данных</p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal modal--full" id="modal-feedback" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <form action="" class="popup-section">
-                            <span class="caption">оставить отзыв</span>
-                            <p>Заполните форму ниже, чтобы оставить отзыв, после модерации он появится на сайте</p>
-
-                            <div class="input-list">
-                                <div class="input-item">
-                                    <input type="text" placeholder="ФИО">
-                                </div>
-                                <div class="input-item">
-                                    <input type="text" placeholder="Телефон" class="phone-input">
-                                </div>
-
-                                <div class="input-item input-textarea">
-                                    <textarea placeholder="Ваш отзыв"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="popup-section__controls">
-                                <button class="btn btn--blueDark">Отправить</button>
-                                <p class="popup-section__desc">нажимая кнопку «оформить заказ»
-                                    вы принимаете политику конфидициальности
-                                    и соглашаетесь на обработку персональных данных</p>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal modal--full" id="modal-feedback-2" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <form action="" class="popup-section">
-                            <span class="caption">консультация</span>
-                            <p>Заполните форму ниже, чтобы оставить вопрос и получить консультацию специалиста</p>
-
-                            <div class="input-list">
-                                <div class="input-item">
-                                    <input type="text" placeholder="ФИО">
-                                </div>
-                                <div class="input-item">
-                                    <input type="text" placeholder="Телефон" class="phone-input">
-                                </div>
-
-                                <div class="input-item input-textarea">
-                                    <textarea placeholder="Ваш отзыв"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="popup-section__controls">
-                                <button class="btn btn--blueDark">Отправить</button>
-                                <p class="popup-section__desc">нажимая кнопку «оформить заказ»
-                                    вы принимаете политику конфидициальности
-                                    и соглашаетесь на обработку персональных данных</p>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-success" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <div action="" class="popup-section">
-                            <span class="caption">заказать звонок</span>
-
-                            <div class="popup-section__result">
-                                <span class="text">спасибо за заявку!</span>
-                                <span>Ожидайте звонка!</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-success-2" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <div action="" class="popup-section">
-                            <span class="caption">оставить отзыв</span>
-
-                            <div class="popup-section__result">
-                                <span class="text">Спасибо,
-                                    ваш отзыв отправлен!</span>
-                                <span>После модерации, мы опубликуем его на сайте</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-success-3" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <div action="" class="popup-section">
-                            <span class="caption">консультация</span>
-
-                            <div class="popup-section__result">
-                                <span class="text">Благодарим<br />
-                                    Вас за вопрос!</span>
-                                <span>В ближайшее время с Вами свяжется менеджер</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script src="../libs/jquery/jquery-3.7.0.min.js"></script>

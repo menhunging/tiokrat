@@ -258,4 +258,79 @@
     width: 100%;
     height: auto;
   }
+
+  .basket-item .picture {
+    height: 173px;
+    width: 165px;
+  }
+
+  .basket-item .product-item__price {
+    .price {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .cur {
+      font-size: 14px;
+    }
+  }
+
+  .basket-result {
+    width: 340px;
+    padding: 35px 25px;
+  }
+
+  .basket-result__list {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .basket-result__result {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .basket-result {
+    .product-item__price .price {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  .basket-content {
+    width: calc(100% - 340px - 20px);
+  }
+
+  .basket-item__info {
+    margin-left: 0;
+  }
+
+  .basket-result__list li + li {
+    margin-top: 24px;
+  }
+
+  .basket-result__list--delivery {
+    padding-top: 24px;
+    margin-top: 24px;
+  }
+
+  .result-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+  }
+
+  .result-section__status {
+    font-size: 18px;
+
+    li {
+      padding: 12px 30px;
+    }
+  }
+
+  .result-section__info {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 30px;
+  }
 }

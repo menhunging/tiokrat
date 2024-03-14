@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
-    <title>Все модальные окна</title>
+    <title>Оформление заказа</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
@@ -20,30 +20,6 @@
     <link rel="stylesheet" type="text/css" href="../libs/fancybox/fancybox.css" />
 
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
-    <style>
-        .test-modals {
-            padding: 50px 0;
-        }
-
-        .test-modals a {
-            display: table;
-            text-decoration: underline;
-        }
-
-        .test-modals h1 {
-            margin-bottom: 50px;
-        }
-
-        .test-modals a+a {
-            margin-top: 10px;
-        }
-
-        .test-modals a:hover {
-            text-decoration-color: transparent;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -181,20 +157,203 @@
         </header>
 
         <main class="main">
-
-            <section class="test-modals">
+            <section class="inner-page">
                 <div class="container">
-                    <h1 class="caption">Тестовые ссылки для открытия модалок:</h1>
+                    <section class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="/">Корзина</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>оформление заказа</span>
+                            </li>
+                        </ul>
+                    </section>
 
-                    <a href="#" data-modal="modal-call">Заказать звонок</a>
-                    <a href="#" data-modal="modal-feedback">Оставить отзыв</a>
-                    <a href="#" data-modal="modal-feedback-2">Консультация</a>
-                    <a href="#" data-modal="modal-success">Cпасибо!</a>
-                    <a href="#" data-modal="modal-success-2">Cпасибо! 2</a>
-                    <a href="#" data-modal="modal-success-3">Cпасибо! 3</a>
+                    <section class="basket-section">
+                        <h2 class="caption caption--h2">оформление заказа</h2>
+                        <form class="basket">
+                            <div class="basket-content">
+                                <div class="order-list">
+                                    <div class="order-item">
+                                        <span class="order-item__caption">покупатель</span>
+
+                                        <div class="check-list">
+                                            <div class="check-block">
+                                                <input type="radio" id="chk1" name="chk" checked>
+                                                <label for="chk1">физическое лицо</label>
+                                            </div>
+                                            <div class="check-block">
+                                                <input type="radio" id="chk2" name="chk">
+                                                <label for="chk2">юридическое лицо</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-list">
+                                            <div class="input-item">
+                                                <input type="text" placeholder="ФИО">
+                                            </div>
+                                            <div class="input-item">
+                                                <input type="text" placeholder="Телефон" class="phone-input">
+                                            </div>
+                                            <div class="input-item">
+                                                <input type="email" placeholder="E-mail">
+                                            </div>
+                                            <div class="input-item textarea-item">
+                                                <textarea placeholder="Комментарий к заказу"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <span class="order-item__title">реквизиты</span>
+
+                                        <div class="form-list">
+                                            <div class="input-item">
+                                                <input type="text" placeholder="Наименование компании">
+                                            </div>
+                                            <div class="input-item">
+                                                <input type="text" placeholder="Банк">
+                                            </div>
+                                            <div class="input-item">
+                                                <input type="text" placeholder="ИНН">
+                                            </div>
+                                            <div class="input-item">
+                                                <input type="text" placeholder="БИК">
+                                            </div>
+                                            <div class="input-item">
+                                                <input type="text" placeholder="Кор/сч">
+                                            </div>
+                                            <div class="input-item">
+                                                <input type="text" placeholder="Р/с">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="order-item">
+                                        <span class="order-item__caption">доставка</span>
+
+                                        <div class="check-list">
+                                            <div class="check-block">
+                                                <input type="radio" id="delivery1" name="delivery" checked>
+                                                <label for="delivery1">самовывоз</label>
+                                            </div>
+                                            <div class="check-block">
+                                                <input type="radio" id="delivery2" name="delivery">
+                                                <label for="delivery2">доставка компанией</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-item__text">
+                                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                                рыбные тексты. Вдали от всех живут они в буквенных домах на берегу
+                                                Семантика большого языкового океана.</p>
+                                        </div>
+                                    </div>
+                                    <div class="order-item">
+                                        <span class="order-item__caption">оплата</span>
+
+                                        <div class="check-list">
+                                            <div class="check-block">
+                                                <input type="radio" id="pay1" name="pay" checked>
+                                                <label for="pay1">Картой на сайте</label>
+                                            </div>
+                                            <div class="check-block">
+                                                <input type="radio" id="pay2" name="pay">
+                                                <label for="pay2">наличными при самовывозе</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-item__text">
+                                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                                рыбные тексты. Вдали от всех живут они в буквенных домах на берегу
+                                                Семантика большого языкового океана.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-result">
+                                <span class="caption caption--h3">о заказе</span>
+                                <span class="basket-result__count">3 товара:</span>
+
+                                <ul class="basket-result__list">
+                                    <li>
+                                        <span>Тиокрафт VL 10</span>
+                                        <span>15 000 руб</span>
+                                    </li>
+                                    <li>
+                                        <span>Тиокрафт VL 10</span>
+                                        <span>15 000 руб</span>
+                                    </li>
+                                    <li>
+                                        <span>Тиокрафт VL 10</span>
+                                        <span>15 000 руб</span>
+                                    </li>
+                                </ul>
+
+                                <ul class="basket-result__list basket-result__list--delivery">
+                                    <li>
+                                        <span>Доставка</span>
+                                        <span>500 руб</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="basket-result__result">
+                                    <span>итого</span>
+
+                                    <div class="product-item__price">
+                                        <span class="price">45 000</span>
+                                        <span class="cur">руб</span>
+                                    </div>
+                                </div>
+
+                                <div class="basket-result__controls">
+                                    <button class="btn btn--blueDark">Оформить заказ</button>
+                                </div>
+
+                                <p class="basket-result__desc">нажимая кнопку «оформить заказ»
+                                    вы принимаете политику конфидициальности
+                                    и соглашаетесь на обработку персональных данных</p>
+                            </div>
+                        </form>
+                    </section>
                 </div>
             </section>
 
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <div class="contacts-left">
+                            <h2 class="caption caption--h2">контакты</h2>
+                            <ul class="contacts__info">
+                                <li>
+                                    <span class="contacts__title">адрес:</span>
+                                    <p>
+                                        121087, г. Москва, ул. Барклая, д. 6, стр. 5, офис А310
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="contacts__title">режим работы:</span>
+                                    <p>
+                                        пн-пт с 10:00 до 18:00
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="contacts__title">e-mail:</span>
+                                    <a href="mailto:info@tiokraft.com">info@tiokraft.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts-right">
+                            <span class="contacts-right__title">связь с нами:</span>
+                            <a href="tel:84952257057" class="contacts-right__link">8 (495) 225 70 57</a>
+                            <a href="#" class="btn btn--blue contacts-right__btn">Заявка на звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -335,221 +494,6 @@
                 </div>
             </div>
         </footer>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-call" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <form action="" class="popup-section">
-                            <span class="caption">заказать звонок</span>
-                            <p>Если у вас есть вопросы или вы хотите получить
-                                консультацию, оставьте заявку, мы перезвоним вам</p>
-
-                            <div class="input-list">
-                                <div class="input-item">
-                                    <input type="text" placeholder="ФИО">
-                                </div>
-                                <div class="input-item">
-                                    <input type="text" placeholder="Телефон" class="phone-input">
-                                </div>
-                            </div>
-
-                            <button class="btn btn--blueDark">Оформить заказ</button>
-                            <p class="popup-section__desc">нажимая кнопку «оформить заказ»
-                                вы принимаете политику конфидициальности
-                                и соглашаетесь на обработку персональных данных</p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal modal--full" id="modal-feedback" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <form action="" class="popup-section">
-                            <span class="caption">оставить отзыв</span>
-                            <p>Заполните форму ниже, чтобы оставить отзыв, после модерации он появится на сайте</p>
-
-                            <div class="input-list">
-                                <div class="input-item">
-                                    <input type="text" placeholder="ФИО">
-                                </div>
-                                <div class="input-item">
-                                    <input type="text" placeholder="Телефон" class="phone-input">
-                                </div>
-
-                                <div class="input-item input-textarea">
-                                    <textarea placeholder="Ваш отзыв"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="popup-section__controls">
-                                <button class="btn btn--blueDark">Отправить</button>
-                                <p class="popup-section__desc">нажимая кнопку «оформить заказ»
-                                    вы принимаете политику конфидициальности
-                                    и соглашаетесь на обработку персональных данных</p>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal modal--full" id="modal-feedback-2" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <form action="" class="popup-section">
-                            <span class="caption">консультация</span>
-                            <p>Заполните форму ниже, чтобы оставить вопрос и получить консультацию специалиста</p>
-
-                            <div class="input-list">
-                                <div class="input-item">
-                                    <input type="text" placeholder="ФИО">
-                                </div>
-                                <div class="input-item">
-                                    <input type="text" placeholder="Телефон" class="phone-input">
-                                </div>
-
-                                <div class="input-item input-textarea">
-                                    <textarea placeholder="Ваш отзыв"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="popup-section__controls">
-                                <button class="btn btn--blueDark">Отправить</button>
-                                <p class="popup-section__desc">нажимая кнопку «оформить заказ»
-                                    вы принимаете политику конфидициальности
-                                    и соглашаетесь на обработку персональных данных</p>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-success" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <div action="" class="popup-section">
-                            <span class="caption">заказать звонок</span>
-
-                            <div class="popup-section__result">
-                                <span class="text">спасибо за заявку!</span>
-                                <span>Ожидайте звонка!</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-success-2" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <div action="" class="popup-section">
-                            <span class="caption">оставить отзыв</span>
-
-                            <div class="popup-section__result">
-                                <span class="text">Спасибо,
-                                    ваш отзыв отправлен!</span>
-                                <span>После модерации, мы опубликуем его на сайте</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="micromodal-slide modal" id="modal-success-3" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <div class="modal__inner">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
-
-                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.4"
-                                d="M8.475 12.5H8.325L5.125 18H0.3V17.325L5.95 8.725L0.9 1.175V0.499999H5.55L8.325 5.05H8.45L11.25 0.499999H15.875V1.175L10.825 8.725L16.5 17.325V18H11.675L8.475 12.5Z"
-                                fill="white" />
-                        </svg>
-
-                    </button>
-                    <div class="modal__content" autocomplete="off">
-                        <div action="" class="popup-section">
-                            <span class="caption">консультация</span>
-
-                            <div class="popup-section__result">
-                                <span class="text">Благодарим<br />
-                                    Вас за вопрос!</span>
-                                <span>В ближайшее время с Вами свяжется менеджер</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script src="../libs/jquery/jquery-3.7.0.min.js"></script>

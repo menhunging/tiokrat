@@ -184,4 +184,59 @@
       }
     }
   }
+
+  .basket-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    .btn-delete {
+      position: absolute;
+      right: 0;
+      top: 30px;
+    }
+  }
+
+  .basket-colors {
+    justify-content: center;
+  }
+
+  .basket-item .product-item__price {
+    text-align: center;
+  }
+
+  .basket-item__info {
+    margin-top: 15px;
+  }
+
+  .basket-result {
+    padding: 29px 15px;
+  }
+
+  .result-section__info .tit {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .result-section__info {
+    gap: 10px;
+  }
+
+  .result-section .btn {
+    padding: 12px 50px;
+  }
+
+  .modal--full .popup-section .input-list {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-section .input-textarea {
+    grid-column: initial;
+  }
+
+  .popup-section {
+    line-height: 18px;
+  }
 }
