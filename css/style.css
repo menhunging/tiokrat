@@ -1582,6 +1582,17 @@ h2 {
 .grettings-block .check-block {
   margin-top: 14px;
 }
+.grettings-block .check-block input:checked + label::before {
+  background-color: rgb(58, 153, 217);
+}
+.grettings-block .check-block label::before {
+  outline: 2px solid rgb(58, 153, 217);
+  border: solid 5px #000;
+  background-color: transparent;
+}
+.grettings-block .check-block label:after {
+  display: none;
+}
 
 .grettings-block__desc {
   font-family: "Intro";
@@ -4811,6 +4822,9 @@ section {
     font-size: 16px;
     line-height: 25px;
     padding: 0 20px;
+  }
+  .check-block label::after {
+    left: 4.5px;
   }
 }
 @media (max-width: 639px) {

@@ -39,6 +39,27 @@
 
   .check-block {
     margin-top: 14px;
+
+    input {
+      &:checked {
+        & + label {
+          &::before {
+            background-color: $colorBlue;
+          }
+        }
+      }
+    }
+
+    label {
+      &::before {
+        outline: 2px solid $colorBlue;
+        border:solid 5px #000;
+        background-color: transparent;
+      }
+      &:after {
+        display: none;
+      }
+    }
   }
 }
 
