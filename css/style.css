@@ -4823,9 +4823,6 @@ section {
     line-height: 25px;
     padding: 0 20px;
   }
-  .check-block label::after {
-    left: 4.5px;
-  }
 }
 @media (max-width: 639px) {
   .header .social {
