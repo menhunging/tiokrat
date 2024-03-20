@@ -333,4 +333,14 @@
     line-height: 30px;
     padding: 0 30px;
   }
+
+  .grettings-block .picture--product {
+    top: 0;
+    width: 50%;
+    height: 100%;
+
+    img {
+      object-fit: contain;
+    }
+  }
 }

@@ -35,6 +35,15 @@
       width: 100%;
       height: 100%;
     }
+
+    &--product{
+      width: 771px;
+      height: 726px;
+      left: auto;
+      right: 0;
+
+      img{}
+    }
   }
 
   .check-block {
@@ -947,7 +956,7 @@ section {
     border-radius: 40px;
     padding: 57px 48px 89px 48px;
     min-height: 294px;
-    transition: transform 1s;
+    transition: transform 1.5s;
     transform: scale(0);
 
     p {

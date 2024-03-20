@@ -130,7 +130,8 @@ $(document).ready(function () {
     const swiper = new Swiper(".slider-products", {
       slidesPerView: 3,
       spaceBetween: 20,
-      watchSlidesProgress: true,
+      loop: true,
+      // watchSlidesProgress: true,
       navigation: {
         nextEl: ".products-section .swiper-button-next",
         prevEl: ".products-section .swiper-button-prev",
@@ -142,18 +143,22 @@ $(document).ready(function () {
       breakpoints: {
         0: {
           slidesPerView: 1,
+          loop: true,
           spaceBetween: 10,
         },
         576: {
           slidesPerView: 2,
+          loop: true,
           spaceBetween: 10,
         },
         1024: {
           slidesPerView: 3,
+          loop: true,
           spaceBetween: 20,
         },
         1620: {
           slidesPerView: 3,
+          loop: true,
           spaceBetween: 20,
         },
       },
@@ -165,7 +170,16 @@ $(document).ready(function () {
       slidesPerView: 1,
       spaceBetween: 20,
       initialSlide: 1,
+      loop: true,
       watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".technologies-section .swiper-button-next",
+        prevEl: ".technologies-section .swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
 
     $(".slider-technologies .technolog-item").on("click", function () {
@@ -269,6 +283,7 @@ $(document).ready(function () {
     const swiper = new Swiper(".advantages-slider", {
       slidesPerView: 1,
       spaceBetween: 20,
+      speed:1000,
       autoHeight: true,
       watchSlidesProgress: true,
       navigation: {
@@ -354,6 +369,7 @@ $(document).ready(function () {
       slidesPerView: 2,
       spaceBetween: 18,
       autoHeight: true,
+      loop:true,
       watchSlidesProgress: true,
       navigation: {
         nextEl: ".foto-section .swiper-button-next",
