@@ -169,7 +169,6 @@ $(document).ready(function () {
     const swiper = new Swiper(".slider-technologies", {
       slidesPerView: 1,
       spaceBetween: 20,
-      initialSlide: 1,
       loop: true,
       watchSlidesProgress: true,
       navigation: {
