@@ -130,8 +130,8 @@ $(document).ready(function () {
     const swiper = new Swiper(".slider-products", {
       slidesPerView: 3,
       spaceBetween: 20,
-      loop: true,
-      // watchSlidesProgress: true,
+      // loop: true,
+      watchSlidesProgress: true,
       navigation: {
         nextEl: ".products-section .swiper-button-next",
         prevEl: ".products-section .swiper-button-prev",
@@ -143,22 +143,18 @@ $(document).ready(function () {
       breakpoints: {
         0: {
           slidesPerView: 1,
-          loop: true,
           spaceBetween: 10,
         },
         576: {
           slidesPerView: 2,
-          loop: true,
           spaceBetween: 10,
         },
         1024: {
           slidesPerView: 3,
-          loop: true,
           spaceBetween: 20,
         },
         1620: {
           slidesPerView: 3,
-          loop: true,
           spaceBetween: 20,
         },
       },
@@ -282,7 +278,7 @@ $(document).ready(function () {
     const swiper = new Swiper(".advantages-slider", {
       slidesPerView: 1,
       spaceBetween: 20,
-      speed:1000,
+      speed: 1000,
       autoHeight: true,
       watchSlidesProgress: true,
       navigation: {
@@ -368,7 +364,7 @@ $(document).ready(function () {
       slidesPerView: 2,
       spaceBetween: 18,
       autoHeight: true,
-      loop:true,
+      loop: true,
       watchSlidesProgress: true,
       navigation: {
         nextEl: ".foto-section .swiper-button-next",

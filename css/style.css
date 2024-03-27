@@ -4426,7 +4426,7 @@ section {
     height: 45px;
   }
   .grettings-form {
-    margin-top: 220px;
+    margin-top: 280px;
   }
   .grettings-block .picture--product {
     top: 110px;
@@ -5142,7 +5142,7 @@ section {
     top: 50%;
     width: 100%;
     height: 50%;
-    transform: translateY(-48%);
+    transform: translateY(-45%);
   }
 }
 @media (max-width: 479px) {
@@ -5342,6 +5342,12 @@ section {
   }
   .grettings-block__txt {
     bottom: -1px;
+  }
+  .grettings-block .picture--product {
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    transform: translateY(-52%);
   }
 }
 

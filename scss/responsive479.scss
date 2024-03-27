@@ -249,4 +249,11 @@
   .grettings-block__txt {
     bottom: -1px;
   }
+
+  .grettings-block .picture--product {
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    transform: translateY(-52%);
+  }
 }
