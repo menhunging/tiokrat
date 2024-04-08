@@ -3743,6 +3743,20 @@ section {
   left: -1px;
 }
 
+.individual__visible {
+  display: none;
+}
+.individual__visible.visible {
+  display: grid;
+}
+
+.entity__visible {
+  display: none;
+}
+.entity__visible.visible {
+  display: grid;
+}
+
 @media (max-width: 1619px) {
   h1,
   .caption--h1 {

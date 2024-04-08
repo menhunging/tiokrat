@@ -36,13 +36,14 @@
       height: 100%;
     }
 
-    &--product{
+    &--product {
       width: 771px;
       height: 726px;
       left: auto;
       right: 0;
 
-      img{}
+      img {
+      }
     }
   }
 
@@ -62,7 +63,7 @@
     label {
       &::before {
         outline: 2px solid $colorBlue;
-        border:solid 5px #000;
+        border: solid 5px #000;
         background-color: transparent;
       }
       &:after {
@@ -2370,4 +2371,20 @@ section {
 .social__link svg {
   position: relative;
   left: -1px;
+}
+
+.individual__visible {
+  display: none;
+
+  &.visible {
+    display: grid;
+  }
+}
+
+.entity__visible {
+  display: none;
+
+  &.visible {
+    display: grid;
+  }
 }

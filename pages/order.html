@@ -183,16 +183,16 @@
 
                                         <div class="check-list">
                                             <div class="check-block">
-                                                <input type="radio" id="chk1" name="chk" checked>
-                                                <label for="chk1">физическое лицо</label>
+                                                <input type="radio" id="individual" name="chk" checked>
+                                                <label for="individual">физическое лицо</label>
                                             </div>
                                             <div class="check-block">
-                                                <input type="radio" id="chk2" name="chk">
-                                                <label for="chk2">юридическое лицо</label>
+                                                <input type="radio" id="entity" name="chk">
+                                                <label for="entity">юридическое лицо</label>
                                             </div>
                                         </div>
 
-                                        <div class="form-list">
+                                        <div class="form-list individual__visible visible">
                                             <div class="input-item">
                                                 <input type="text" placeholder="ФИО">
                                             </div>
@@ -207,9 +207,9 @@
                                             </div>
                                         </div>
 
-                                        <span class="order-item__title">реквизиты</span>
+                                        <span class="order-item__title entity__visible">реквизиты</span>
 
-                                        <div class="form-list">
+                                        <div class="form-list entity__visible">
                                             <div class="input-item">
                                                 <input type="text" placeholder="Наименование компании">
                                             </div>
@@ -230,6 +230,7 @@
                                             </div>
 
                                         </div>
+
                                     </div>
                                     <div class="order-item">
                                         <span class="order-item__caption">доставка</span>
